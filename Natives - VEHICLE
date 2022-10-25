@@ -1,0 +1,519 @@
+		static Vehicle CREATE_VEHICLE(Hash modelHash, float x, float y, float z, float heading, BOOL isNetwork, BOOL thisScriptCheck) { return invoke<Vehicle>(0xAF35D0D2583051B0, modelHash, x, y, z, heading, isNetwork, thisScriptCheck); } // 0xAF35D0D2583051B0 0xDD75460A
+		static void DELETE_VEHICLE(Vehicle* vehicle) { invoke<Void>(0xEA386986E786A54F, vehicle); } // 0xEA386986E786A54F 0x9803AF60
+		static void _0x7D6F9A3EF26136A0(Vehicle vehicle, BOOL p1, BOOL p2) { invoke<Void>(0x7D6F9A3EF26136A0, vehicle, p1, p2); } // 0x7D6F9A3EF26136A0 0xBB54ECCA
+		static void SET_VEHICLE_ALLOW_NO_PASSENGERS_LOCKON(Vehicle veh, BOOL toggle) { invoke<Void>(0x5D14D4154BFE7B2C, veh, toggle); } // 0x5D14D4154BFE7B2C 0x8BAAC437
+		static int _GET_VEHICLE_WEAPON_TARGET_LOCK_STATUS(Vehicle vehicle) { return invoke<int>(0xE6B0E8CFC3633BF0, vehicle); } // 0xE6B0E8CFC3633BF0 0xFBDE9FD8
+		static BOOL IS_VEHICLE_MODEL(Vehicle vehicle, Hash model) { return invoke<BOOL>(0x423E8DE37D934D89, vehicle, model); } // 0x423E8DE37D934D89 0x013B10B6
+		static BOOL DOES_SCRIPT_VEHICLE_GENERATOR_EXIST(int v) { return invoke<BOOL>(0xF6086BC836400876, v); } // 0xF6086BC836400876 0xF6BDDA30
+		static int CREATE_SCRIPT_VEHICLE_GENERATOR(float x, float y, float z, float heading, float p4, float p5, Hash modelHash, int p7, int p8, int p9, int p10, BOOL p11, BOOL p12, BOOL p13, BOOL p14, BOOL p15, int p16) { return invoke<int>(0x9DEF883114668116, x, y, z, heading, p4, p5, modelHash, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16); } // 0x9DEF883114668116 0x25A9A261
+		static void DELETE_SCRIPT_VEHICLE_GENERATOR(int vehicleGenerator) { invoke<Void>(0x22102C9ABFCF125D, vehicleGenerator); } // 0x22102C9ABFCF125D 0xE4328E3F
+		static void SET_SCRIPT_VEHICLE_GENERATOR(int vehicleGenerator, BOOL enabled) { invoke<Void>(0xD9D620E0AC6DC4B0, vehicleGenerator, enabled); } // 0xD9D620E0AC6DC4B0 0x40D73747
+		static void SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(float minX, float minY, float minZ, float maxX, float maxY, float maxZ, BOOL p6, BOOL p7) { invoke<Void>(0xC12321827687FE4D, minX, minY, minZ, maxX, maxY, maxZ, p6, p7); } // 0xC12321827687FE4D 0xB4E0E69A
+		static void SET_ALL_VEHICLE_GENERATORS_ACTIVE() { invoke<Void>(0x34AD89078831A4BC); } // 0x34AD89078831A4BC 0xAB1FDD76
+		static void SET_ALL_LOW_PRIORITY_VEHICLE_GENERATORS_ACTIVE(BOOL active) { invoke<Void>(0x608207E7A8FB787C, active); } // 0x608207E7A8FB787C 0x87F767F2
+		static void _0x9A75585FB2E54FAD(float p0, float p1, float p2, float p3) { invoke<Void>(0x9A75585FB2E54FAD, p0, p1, p2, p3); } // 0x9A75585FB2E54FAD 0x935A95DA
+		static void _0x0A436B8643716D14() { invoke<Void>(0x0A436B8643716D14); } // 0x0A436B8643716D14 0x6C73E45A
+		static BOOL SET_VEHICLE_ON_GROUND_PROPERLY(Vehicle vehicle) { return invoke<BOOL>(0x49733E92263139D1, vehicle); } // 0x49733E92263139D1 0xE14FDBA6
+		static Any SET_ALL_VEHICLES_SPAWN(Vehicle vehicle, BOOL p1, BOOL p2, BOOL p3) { return invoke<Any>(0xE023E8AC4EF7C117, vehicle, p1, p2, p3); } // 0xE023E8AC4EF7C117 0xA0909ADB
+		static BOOL IS_VEHICLE_STUCK_ON_ROOF(Vehicle vehicle) { return invoke<BOOL>(0xB497F06B288DCFDF, vehicle); } // 0xB497F06B288DCFDF 0x18D07C6C
+		static void ADD_VEHICLE_UPSIDEDOWN_CHECK(Vehicle vehicle) { invoke<Void>(0xB72E26D81006005B, vehicle); } // 0xB72E26D81006005B 0x3A13D384
+		static void REMOVE_VEHICLE_UPSIDEDOWN_CHECK(Vehicle vehicle) { invoke<Void>(0xC53EB42A499A7E90, vehicle); } // 0xC53EB42A499A7E90 0xF390BA1B
+		static BOOL IS_VEHICLE_STOPPED(Vehicle vehicle) { return invoke<BOOL>(0x5721B434AD84D57A, vehicle); } // 0x5721B434AD84D57A 0x655F072C
+		static int GET_VEHICLE_NUMBER_OF_PASSENGERS(Vehicle vehicle) { return invoke<int>(0x24CB2137731FFE89, vehicle); } // 0x24CB2137731FFE89 0x1EF20849
+		static int GET_VEHICLE_MAX_NUMBER_OF_PASSENGERS(Vehicle vehicle) { return invoke<int>(0xA7C4F2C6E744A550, vehicle); } // 0xA7C4F2C6E744A550 0x0A2FC08C
+		static int GET_VEHICLE_MODEL_NUMBER_OF_SEATS(Hash modelHash) { return invoke<int>(0x2AD93716F184EDA4, modelHash); } // 0x2AD93716F184EDA4 0x838F7BF7
+		static BOOL _0xF7F203E31F96F6A1(Vehicle vehicle, BOOL flag) { return invoke<BOOL>(0xF7F203E31F96F6A1, vehicle, flag); } // 0xF7F203E31F96F6A1 0x769E5CF2
+		static BOOL _0xE33FFA906CE74880(Vehicle vehicle, Any p1) { return invoke<BOOL>(0xE33FFA906CE74880, vehicle, p1); } // 0xE33FFA906CE74880
+		static void SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(float multiplier) { invoke<Void>(0x245A6883D966D537, multiplier); } // 0x245A6883D966D537 0xF4187E51
+		static void SET_RANDOM_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(float multiplier) { invoke<Void>(0xB3B3359379FE77D3, multiplier); } // 0xB3B3359379FE77D3 0x543F712B
+		static void SET_PARKED_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(float multiplier) { invoke<Void>(0xEAE6DCC7EEE3DB1D, multiplier); } // 0xEAE6DCC7EEE3DB1D 0xDD46CEBE
+		static void SET_DISABLE_RANDOM_TRAINS_THIS_FRAME(BOOL toggle) { invoke<Void>(0xD4B8E3D1917BC86B, toggle); } // 0xD4B8E3D1917BC86B 0x09462665
+		static void _SET_SOME_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(float value) { invoke<Void>(0x90B6DA738A9A25DA, value); } // 0x90B6DA738A9A25DA 0xDAE2A2BE
+		static void SET_FAR_DRAW_VEHICLES(BOOL toggle) { invoke<Void>(0x26324F33423F3CC3, toggle); } // 0x26324F33423F3CC3 0x9F019C49
+		static void SET_NUMBER_OF_PARKED_VEHICLES(int value) { invoke<Void>(0xCAA15F13EBD417FF, value); } // 0xCAA15F13EBD417FF 0x206A58E8
+		static void SET_VEHICLE_DOORS_LOCKED(int* vehicle, float* doorLockStatus) { invoke<Void>(0xB664292EAECF7FA6, vehicle, doorLockStatus); } // 0xB664292EAECF7FA6 0x4CDD35D0
+		static void SET_PED_TARGETTABLE_VEHICLE_DESTROY(Vehicle vehicle, int doorIndex, int destroyType) { invoke<Void>(0xBE70724027F85BCD, vehicle, doorIndex, destroyType); } // 0xBE70724027F85BCD 0xD61D182D
+		static void DISABLE_VEHICLE_IMPACT_EXPLOSION_ACTIVATION(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xD8050E0EB60CF274, vehicle, toggle); } // 0xD8050E0EB60CF274 0xC54156A9
+		static void SET_VEHICLE_DOORS_LOCKED_FOR_PLAYER(Vehicle vehicle, Player player, BOOL toggle) { invoke<Void>(0x517AAF684BB50CD1, vehicle, player, toggle); } // 0x517AAF684BB50CD1 0x49829236
+		static BOOL GET_VEHICLE_DOORS_LOCKED_FOR_PLAYER(Vehicle vehicle, Player player) { return invoke<BOOL>(0xF6AF6CB341349015, vehicle, player); } // 0xF6AF6CB341349015 0x1DC50247
+		static void SET_VEHICLE_DOORS_LOCKED_FOR_ALL_PLAYERS(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xA2F80B8D040727CC, vehicle, toggle); } // 0xA2F80B8D040727CC 0x891BA8A4
+		static void SET_VEHICLE_DOORS_LOCKED_FOR_NON_SCRIPT_PLAYERS(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x9737A37136F07E75, vehicle, toggle); } // 0x9737A37136F07E75 0xE4EF6514
+		static void SET_VEHICLE_DOORS_LOCKED_FOR_TEAM(Vehicle vehicle, int team, BOOL toggle) { invoke<Void>(0xB81F6D4A8F5EEBA8, vehicle, team, toggle); } // 0xB81F6D4A8F5EEBA8 0x4F85E783
+		static void EXPLODE_VEHICLE(Vehicle vehicle, BOOL isAudible, BOOL isInvisible) { invoke<Void>(0xBA71116ADF5B514C, vehicle, isAudible, isInvisible); } // 0xBA71116ADF5B514C 0xBEDEACEB
+		static void SET_VEHICLE_OUT_OF_CONTROL(Vehicle vehicle, BOOL killDriver, BOOL explodeOnImpact) { invoke<Void>(0xF19D095E42D430CC, vehicle, killDriver, explodeOnImpact); } // 0xF19D095E42D430CC 0x3764D734
+		static void SET_VEHICLE_TIMED_EXPLOSION(Vehicle vehicle, Ped ped, BOOL toggle) { invoke<Void>(0x2E0A74E1002380B1, vehicle, ped, toggle); } // 0x2E0A74E1002380B1 0xDB8CB8E2
+		static void ADD_VEHICLE_PHONE_EXPLOSIVE_DEVICE(Vehicle vehicle) { invoke<Void>(0x99AD4CCCB128CBC9, vehicle); } // 0x99AD4CCCB128CBC9 0x811373DE
+		static BOOL HAS_VEHICLE_PHONE_EXPLOSIVE_DEVICE() { return invoke<BOOL>(0x6ADAABD3068C5235); } // 0x6ADAABD3068C5235 0xA4E69134
+		static void DETONATE_VEHICLE_PHONE_EXPLOSIVE_DEVICE() { invoke<Void>(0xEF49CF0270307CBE); } // 0xEF49CF0270307CBE 0x65255524
+		static BOOL _0xAE3FEE8709B39DCB(Vehicle vehicle) { return invoke<BOOL>(0xAE3FEE8709B39DCB, vehicle); } // 0xAE3FEE8709B39DCB 0xE39DAF36
+		static void SET_TAXI_LIGHTS(Vehicle vehicle, BOOL state) { invoke<Void>(0x598803E85E8448D9, vehicle, state); } // 0x598803E85E8448D9 0x68639D85
+		static BOOL IS_TAXI_LIGHT_ON(Vehicle vehicle) { return invoke<BOOL>(0x7504C0F113AB50FC, vehicle); } // 0x7504C0F113AB50FC 0x6FC4924A
+		static BOOL IS_VEHICLE_IN_GARAGE_AREA(char* garageName, Vehicle vehicle) { return invoke<BOOL>(0xCEE4490CD57BB3C2, garageName, vehicle); } // 0xCEE4490CD57BB3C2 0xA90EC257
+		static void SET_VEHICLE_COLOURS(Vehicle vehicle, int colorPrimary, int colorSecondary) { invoke<Void>(0x4F1D4BE3A7F24601, vehicle, colorPrimary, colorSecondary); } // 0x4F1D4BE3A7F24601 0x57F24253
+		static void SET_VEHICLE_FULLBEAM(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x8B7FD87F0DDB421E, vehicle, toggle); } // 0x8B7FD87F0DDB421E 0x9C49CC15
+		static void STEER_UNLOCK_BIAS(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x07116E24E9D1929D, vehicle, toggle); } // 0x07116E24E9D1929D 0xA59E3DCD
+		static void SET_VEHICLE_CUSTOM_PRIMARY_COLOUR(Vehicle vehicle, int r, int g, int b) { invoke<Void>(0x7141766F91D15BEA, vehicle, r, g, b); } // 0x7141766F91D15BEA 0x8DF9F9BC
+		static void GET_VEHICLE_CUSTOM_PRIMARY_COLOUR(Vehicle vehicle, int* r, int* g, int* b) { invoke<Void>(0xB64CF2CCA9D95F52, vehicle, r, g, b); } // 0xB64CF2CCA9D95F52 0x1C2B9FEF
+		static void CLEAR_VEHICLE_CUSTOM_PRIMARY_COLOUR(Vehicle vehicle) { invoke<Void>(0x55E1D2758F34E437, vehicle); } // 0x55E1D2758F34E437 0x51E1E33D
+		static BOOL GET_IS_VEHICLE_PRIMARY_COLOUR_CUSTOM(Vehicle vehicle) { return invoke<BOOL>(0xF095C0405307B21B, vehicle); } // 0xF095C0405307B21B 0xD7EC8760
+		static void SET_VEHICLE_CUSTOM_SECONDARY_COLOUR(Vehicle vehicle, int r, int g, int b) { invoke<Void>(0x36CED73BFED89754, vehicle, r, g, b); } // 0x36CED73BFED89754 0x9D77259E
+		static void GET_VEHICLE_CUSTOM_SECONDARY_COLOUR(Vehicle vehicle, int* r, int* g, int* b) { invoke<Void>(0x8389CD56CA8072DC, vehicle, r, g, b); } // 0x8389CD56CA8072DC 0x3FF247A2
+		static void CLEAR_VEHICLE_CUSTOM_SECONDARY_COLOUR(Vehicle vehicle) { invoke<Void>(0x5FFBDEEC3E8E2009, vehicle); } // 0x5FFBDEEC3E8E2009 0x7CE00B29
+		static BOOL GET_IS_VEHICLE_SECONDARY_COLOUR_CUSTOM(Vehicle vehicle) { return invoke<BOOL>(0x910A32E7AAD2656C, vehicle); } // 0x910A32E7AAD2656C 0x288AD228
+		static void SET_VEHICLE_ENVEFF_SCALE(Vehicle vehicle, float fade) { invoke<Void>(0x3AFDC536C3D01674, vehicle, fade); } // 0x3AFDC536C3D01674 0x8332730C
+		static float GET_VEHICLE_ENVEFF_SCALE(Vehicle vehicle) { return invoke<float>(0xA82819CAC9C4C403, vehicle); } // 0xA82819CAC9C4C403 0xD5F1EEE1
+		static void SET_CAN_RESPRAY_VEHICLE(Vehicle vehicle, BOOL state) { invoke<Void>(0x52BBA29D5EC69356, vehicle, state); } // 0x52BBA29D5EC69356 0x37677590
+		static void _0x33506883545AC0DF(Vehicle vehicle, BOOL p1) { invoke<Void>(0x33506883545AC0DF, vehicle, p1); } // 0x33506883545AC0DF 0x54E9EE75
+		static void _JITTER_VEHICLE(Vehicle vehicle, BOOL p1, float yaw, float pitch, float roll) { invoke<Void>(0xC59872A5134879C7, vehicle, p1, yaw, pitch, roll); } // 0xC59872A5134879C7 0x4A46E814
+		static void SET_BOAT_ANCHOR(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x75DBEC174AEEAD10, vehicle, toggle); } // 0x75DBEC174AEEAD10 0xA3906284
+		static BOOL _GET_BOAT_ANCHOR(Vehicle vehicle) { return invoke<BOOL>(0x26C10ECBDA5D043B, vehicle); } // 0x26C10ECBDA5D043B
+		static void _0xE3EBAAE484798530(Vehicle vehicle, BOOL p1) { invoke<Void>(0xE3EBAAE484798530, vehicle, p1); } // 0xE3EBAAE484798530 0x0ED84792
+		static void _0xB28B1FE5BFADD7F5(Vehicle vehicle, BOOL p1) { invoke<Void>(0xB28B1FE5BFADD7F5, vehicle, p1); } // 0xB28B1FE5BFADD7F5 0xA739012A
+		static void _0xE842A9398079BD82(Vehicle vehicle, float p1) { invoke<Void>(0xE842A9398079BD82, vehicle, p1); } // 0xE842A9398079BD82 0x66FA450C
+		static void _0x8F719973E1445BA2(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x8F719973E1445BA2, vehicle, toggle); } // 0x8F719973E1445BA2 0x35614622
+		static void SET_VEHICLE_SIREN(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xF4924635A19EB37D, vehicle, toggle); } // 0xF4924635A19EB37D 0x4AC1EFC7
+		static BOOL IS_VEHICLE_SIREN_ON(Vehicle vehicle) { return invoke<BOOL>(0x4C9BF537BE2634B2, vehicle); } // 0x4C9BF537BE2634B2 0x25EB5873
+		static BOOL _IS_VEHICLE_SIREN_SOUND_ON(Vehicle vehicle) { return invoke<BOOL>(0xB5CC40FBCB586380, vehicle); } // 0xB5CC40FBCB586380
+		static void SET_VEHICLE_STRONG(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x3E8C8727991A8A0B, vehicle, toggle); } // 0x3E8C8727991A8A0B 0xC758D19F
+		static void REMOVE_VEHICLE_STUCK_CHECK(Vehicle vehicle) { invoke<Void>(0x8386BFB614D06749, vehicle); } // 0x8386BFB614D06749 0x81594917
+		static void GET_VEHICLE_COLOURS(Vehicle vehicle, int* colorPrimary, int* colorSecondary) { invoke<Void>(0xA19435F193E081AC, vehicle, colorPrimary, colorSecondary); } // 0xA19435F193E081AC 0x40D82D88
+		static BOOL IS_VEHICLE_SEAT_FREE(Vehicle vehicle, int seatIndex) { return invoke<BOOL>(0x22AC59A870E6A669, vehicle, seatIndex); } // 0x22AC59A870E6A669 0xDAF42B02
+		static Ped GET_PED_IN_VEHICLE_SEAT(Vehicle vehicle, int index) { return invoke<Ped>(0xBB40DD2270B65366, vehicle, index); } // 0xBB40DD2270B65366 0x388FDE9A
+		static Ped GET_LAST_PED_IN_VEHICLE_SEAT(Vehicle vehicle, int seatIndex) { return invoke<Ped>(0x83F969AA1EE2A664, vehicle, seatIndex); } // 0x83F969AA1EE2A664 0xF7C6792D
+		static BOOL GET_VEHICLE_LIGHTS_STATE(Vehicle vehicle, BOOL* lightsOn, BOOL* highbeamsOn) { return invoke<BOOL>(0xB91B4C20085BD12F, vehicle, lightsOn, highbeamsOn); } // 0xB91B4C20085BD12F 0x7C278621
+		static BOOL IS_VEHICLE_TYRE_BURST(Vehicle vehicle, int wheelID, BOOL completely) { return invoke<BOOL>(0xBA291848A0815CA9, vehicle, wheelID, completely); } // 0xBA291848A0815CA9 0x48C80210
+		static void SET_VEHICLE_FORWARD_SPEED(Vehicle vehicle, float speed) { invoke<Void>(0xAB54A438726D25D5, vehicle, speed); } // 0xAB54A438726D25D5 0x69880D14
+		static void BRING_VEHICLE_TO_HALT(Vehicle vehicle, float distance, int type, BOOL unknown) { invoke<Void>(0x260BE8F09E326A20, vehicle, distance, type, unknown); } // 0x260BE8F09E326A20 0xCBC7D3C8
+		static void _SET_VEHICLE_FORKLIFT_HEIGHT(Vehicle vehicle, float height) { invoke<Void>(0x37EBBF3117BD6A25, vehicle, height); } // 0x37EBBF3117BD6A25 0x943A6CFC
+		static BOOL SET_PED_ENABLED_BIKE_RINGTONE(Vehicle vehicle, Entity entity) { return invoke<BOOL>(0x57715966069157AD, vehicle, entity); } // 0x57715966069157AD 0x7FB25568
+		static BOOL _0x62CA17B74C435651(Vehicle vehicle) { return invoke<BOOL>(0x62CA17B74C435651, vehicle); } // 0x62CA17B74C435651 0x593143B9
+		static Vehicle _GET_VEHICLE_ATTACHED_TO_ENTITY(Vehicle object) { return invoke<Vehicle>(0x375E7FC44F21C8AB, object); } // 0x375E7FC44F21C8AB 0x70DD5E25
+		static BOOL _0x89D630CF5EA96D23(Vehicle vehicle, Entity entity) { return invoke<BOOL>(0x89D630CF5EA96D23, vehicle, entity); } // 0x89D630CF5EA96D23 0xFBF5536A
+		static void _0x6A98C2ECF57FA5D4(Vehicle vehicle, Entity entity) { invoke<Void>(0x6A98C2ECF57FA5D4, vehicle, entity); } // 0x6A98C2ECF57FA5D4 0x20AB5783
+		static void _0x7C0043FDFF6436BC(Vehicle vehicle) { invoke<Void>(0x7C0043FDFF6436BC, vehicle); } // 0x7C0043FDFF6436BC 0x0F11D01F
+		static void _0x8AA9180DE2FEDD45(Vehicle vehicle, BOOL p1) { invoke<Void>(0x8AA9180DE2FEDD45, vehicle, p1); } // 0x8AA9180DE2FEDD45 0xAE040377
+		static void _0x0A6A279F3AA4FD70(Vehicle vehicle, BOOL p1) { invoke<Void>(0x0A6A279F3AA4FD70, vehicle, p1); } // 0x0A6A279F3AA4FD70 0x4C0E4031
+		static BOOL _0x634148744F385576(Vehicle vehicle) { return invoke<BOOL>(0x634148744F385576, vehicle); } // 0x634148744F385576 0x6346B7CC
+		static void _0xE6F13851780394DA(Vehicle vehicle, float p1) { invoke<Void>(0xE6F13851780394DA, vehicle, p1); } // 0xE6F13851780394DA 0xCCB41A55
+		static void SET_VEHICLE_TYRE_BURST(Vehicle vehicle, int index, BOOL onRim, float p3) { invoke<Void>(0xEC6A202EE4960385, vehicle, index, onRim, p3); } // 0xEC6A202EE4960385 0x89D28068
+		static void SET_VEHICLE_DOORS_SHUT(Vehicle vehicle, BOOL closeInstantly) { invoke<Void>(0x781B3D62BB013EF5, vehicle, closeInstantly); } // 0x781B3D62BB013EF5 0xBB1FF6E7
+		static void SET_VEHICLE_TYRES_CAN_BURST(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xEB9DC3C7D8596C46, vehicle, toggle); } // 0xEB9DC3C7D8596C46 0xA198DB54
+		static BOOL GET_VEHICLE_TYRES_CAN_BURST(Vehicle vehicle) { return invoke<BOOL>(0x678B9BB8C3F58FEB, vehicle); } // 0x678B9BB8C3F58FEB 0x4D76CD2F
+		static void SET_VEHICLE_WHEELS_CAN_BREAK(Vehicle vehicle, BOOL enabled) { invoke<Void>(0x29B18B4FD460CA8F, vehicle, enabled); } // 0x29B18B4FD460CA8F 0x829ED654
+		static void SET_VEHICLE_DOOR_OPEN(Vehicle vehicle, int doorIndex, BOOL loose, BOOL openInstantly) { invoke<Void>(0x7C65DAC73C35C862, vehicle, doorIndex, loose, openInstantly); } // 0x7C65DAC73C35C862 0xBB75D38B
+		static void REMOVE_VEHICLE_WINDOW(Vehicle vehicle, int windowIndex) { invoke<Void>(0xA711568EEDB43069, vehicle, windowIndex); } // 0xA711568EEDB43069 0xBB8104A3
+		static void ROLL_DOWN_WINDOWS(Vehicle vehicle) { invoke<Void>(0x85796B0549DDE156, vehicle); } // 0x85796B0549DDE156 0x51A16DC6
+		static void ROLL_DOWN_WINDOW(Vehicle vehicle, int windowIndex) { invoke<Void>(0x7AD9E6CE657D69E3, vehicle, windowIndex); } // 0x7AD9E6CE657D69E3 0xF840134C
+		static void ROLL_UP_WINDOW(Vehicle vehicle, int windowIndex) { invoke<Void>(0x602E548F46E24D59, vehicle, windowIndex); } // 0x602E548F46E24D59 0x83B7E06A
+		static void SMASH_VEHICLE_WINDOW(Vehicle vehicle, int index) { invoke<Void>(0x9E5B5E4D2CCD2259, vehicle, index); } // 0x9E5B5E4D2CCD2259 0xDDD9A8C2
+		static void FIX_VEHICLE_WINDOW(Vehicle vehicle, int index) { invoke<Void>(0x772282EBEB95E682, vehicle, index); } // 0x772282EBEB95E682 0x6B8E990D
+		static void _DETACH_VEHICLE_WINDSCREEN(Vehicle vehicle) { invoke<Void>(0x6D645D59FB5F5AD3, vehicle); } // 0x6D645D59FB5F5AD3 0xCC95C96B
+		static void _EJECT_JB700_ROOF(Vehicle vehicle, float x, float y, float z) { invoke<Void>(0xE38CB9D7D39FDBCC, vehicle, x, y, z); } // 0xE38CB9D7D39FDBCC 0xFDA7B6CA
+		static void SET_VEHICLE_LIGHTS(Vehicle vehicle, int state) { invoke<Void>(0x34E710FF01247C5A, vehicle, state); } // 0x34E710FF01247C5A 0xE8930226
+		static void _0xC45C27EF50F36ADC(Vehicle vehicle, BOOL p1) { invoke<Void>(0xC45C27EF50F36ADC, vehicle, p1); } // 0xC45C27EF50F36ADC 0x4221E435
+		static void _SET_VEHICLE_LIGHTS_MODE(Vehicle vehicle, int p1) { invoke<Void>(0x1FD09E7390A74D54, vehicle, p1); } // 0x1FD09E7390A74D54
+		static void SET_VEHICLE_ALARM(Vehicle vehicle, BOOL state) { invoke<Void>(0xCDE5E70C1DDB954C, vehicle, state); } // 0xCDE5E70C1DDB954C 0x24877D84
+		static void START_VEHICLE_ALARM(Vehicle vehicle) { invoke<Void>(0xB8FF7AB45305C345, vehicle); } // 0xB8FF7AB45305C345 0x5B451FF7
+		static BOOL IS_VEHICLE_ALARM_ACTIVATED(Vehicle vehicle) { return invoke<BOOL>(0x4319E335B71FFF34, vehicle); } // 0x4319E335B71FFF34 0xF2630A4C
+		static void SET_VEHICLE_INTERIORLIGHT(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xBC2042F090AF6AD3, vehicle, toggle); } // 0xBC2042F090AF6AD3 0x9AD1FE1E
+		static void SET_VEHICLE_LIGHT_MULTIPLIER(Vehicle vehicle, float multiplier) { invoke<Void>(0xB385454F8791F57C, vehicle, multiplier); } // 0xB385454F8791F57C 0x48039D6A
+		static void ATTACH_VEHICLE_TO_TRAILER(Vehicle vehicle, Vehicle trailer, float radius) { invoke<Void>(0x3C7D42D58F770B54, vehicle, trailer, radius); } // 0x3C7D42D58F770B54 0x2133977F
+		static void _0x16B5E274BDE402F8(Vehicle vehicle, Vehicle trailer, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11) { invoke<Void>(0x16B5E274BDE402F8, vehicle, trailer, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11); } // 0x16B5E274BDE402F8 0x12AC1A16
+		static void _0x374706271354CB18(Vehicle vehicle, Entity p1, float p2) { invoke<Void>(0x374706271354CB18, vehicle, p1, p2); } // 0x374706271354CB18 0x40C4763F
+		static void DETACH_VEHICLE_FROM_TRAILER(Vehicle vehicle) { invoke<Void>(0x90532EDF0D2BDD86, vehicle); } // 0x90532EDF0D2BDD86 0xB5DBF91D
+		static BOOL IS_VEHICLE_ATTACHED_TO_TRAILER(Vehicle vehicle) { return invoke<BOOL>(0xE7CF3C4F9F489F0C, vehicle); } // 0xE7CF3C4F9F489F0C 0xE142BBCC
+		static void _0x2A8F319B392E7B3F(Vehicle vehicle, float p1) { invoke<Void>(0x2A8F319B392E7B3F, vehicle, p1); } // 0x2A8F319B392E7B3F 0xE74E85CE
+		static void _0x95CF53B3D687F9FA(Vehicle vehicle) { invoke<Void>(0x95CF53B3D687F9FA, vehicle); } // 0x95CF53B3D687F9FA 0x06C47A6F
+		static void SET_VEHICLE_TYRE_FIXED(Vehicle vehicle, int tyreIndex) { invoke<Void>(0x6E13FC662B882D1D, vehicle, tyreIndex); } // 0x6E13FC662B882D1D 0xA42EFA6B
+		static void SET_VEHICLE_NUMBER_PLATE_TEXT(Vehicle vehicle, char* plateText) { invoke<Void>(0x95A88F0B409CDA47, vehicle, plateText); } // 0x95A88F0B409CDA47 0x400F9556
+		static char* GET_VEHICLE_NUMBER_PLATE_TEXT(Vehicle vehicle) { return invoke<char*>(0x7CE1CCB9B293020E, vehicle); } // 0x7CE1CCB9B293020E 0xE8522D58
+		static int GET_NUMBER_OF_VEHICLE_NUMBER_PLATES() { return invoke<int>(0x4C4D6B2644F458CB); } // 0x4C4D6B2644F458CB 0xD24BC1AE
+		static void SET_VEHICLE_NUMBER_PLATE_TEXT_INDEX(Vehicle vehicle, int plateIndex) { invoke<Void>(0x9088EB5A43FFB0A1, vehicle, plateIndex); } // 0x9088EB5A43FFB0A1 0xA1A1890E
+		static int GET_VEHICLE_NUMBER_PLATE_TEXT_INDEX(Vehicle elegy) { return invoke<int>(0xF11BC2DD9A3E7195, elegy); } // 0xF11BC2DD9A3E7195 0x499747B6
+		static void SET_RANDOM_TRAINS(BOOL toggle) { invoke<Void>(0x80D9F74197EA47D9, toggle); } // 0x80D9F74197EA47D9 0xD461CA7F
+		static Vehicle CREATE_MISSION_TRAIN(int variation, float x, float y, float z, BOOL direction) { return invoke<Vehicle>(0x63C6CCA8E68AE8C8, variation, x, y, z, direction); } // 0x63C6CCA8E68AE8C8 0xD4C2EAFD
+		static void SWITCH_TRAIN_TRACK(int intersectionId, BOOL state) { invoke<Void>(0xFD813BB7DB977F20, intersectionId, state); } // 0xFD813BB7DB977F20 0x68BFDD61
+		static void _0x21973BBF8D17EDFA(Any p0, Any p1) { invoke<Void>(0x21973BBF8D17EDFA, p0, p1); } // 0x21973BBF8D17EDFA 0xD5774FB7
+		static void DELETE_ALL_TRAINS() { invoke<Void>(0x736A718577F39C7D); } // 0x736A718577F39C7D 0x83DE7ABF
+		static void SET_TRAIN_SPEED(Vehicle train, float speed) { invoke<Void>(0xAA0BC91BE0B796E3, train, speed); } // 0xAA0BC91BE0B796E3 0xDFC35E4D
+		static void SET_TRAIN_CRUISE_SPEED(Vehicle train, float speed) { invoke<Void>(0x16469284DB8C62B5, train, speed); } // 0x16469284DB8C62B5 0xB507F51D
+		static void SET_RANDOM_BOATS(BOOL toggle) { invoke<Void>(0x84436EC293B1415F, toggle); } // 0x84436EC293B1415F 0xB505BD89
+		static void SET_GARBAGE_TRUCKS(BOOL toggle) { invoke<Void>(0x2AFD795EEAC8D30D, toggle); } // 0x2AFD795EEAC8D30D 0xD9ABB0FF
+		static BOOL DOES_VEHICLE_HAVE_STUCK_VEHICLE_CHECK(Vehicle vehicle) { return invoke<BOOL>(0x57E4C39DE5EE8470, vehicle); } // 0x57E4C39DE5EE8470 0x5D91D9AC
+		static int GET_VEHICLE_RECORDING_ID(int p0, char* p1) { return invoke<int>(0x21543C612379DB3C, p0, p1); } // 0x21543C612379DB3C 0x328D601D
+		static void REQUEST_VEHICLE_RECORDING(int i, char* name) { invoke<Void>(0xAF514CABE74CBF15, i, name); } // 0xAF514CABE74CBF15 0x91AFEFD9
+		static BOOL HAS_VEHICLE_RECORDING_BEEN_LOADED(Any p0, Any* p1) { return invoke<BOOL>(0x300D614A4C785FC4, p0, p1); } // 0x300D614A4C785FC4 0xF52CD7F5
+		static void REMOVE_VEHICLE_RECORDING(Any p0, Any* p1) { invoke<Void>(0xF1160ACCF98A3FC8, p0, p1); } // 0xF1160ACCF98A3FC8 0xD3C05B00
+		static Vector3 _0x92523B76657A517D(Any p0, float p1) { return invoke<Vector3>(0x92523B76657A517D, p0, p1); } // 0x92523B76657A517D 0xF31973BB
+		static Vector3 GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME(int p0, float p1, char* p2) { return invoke<Vector3>(0xD242728AA6F0FBA2, p0, p1, p2); } // 0xD242728AA6F0FBA2 0x7178558D
+		static Vector3 _0xF0F2103EFAF8CBA7(Any p0, float p1) { return invoke<Vector3>(0xF0F2103EFAF8CBA7, p0, p1); } // 0xF0F2103EFAF8CBA7 0x4D1C15C2
+		static Vector3 GET_ROTATION_OF_VEHICLE_RECORDING_AT_TIME(Any p0, float p1, Any* p2) { return invoke<Vector3>(0x2058206FBE79A8AD, p0, p1, p2); } // 0x2058206FBE79A8AD 0xD96DEC68
+		static float GET_TOTAL_DURATION_OF_VEHICLE_RECORDING_ID(int recordingID) { return invoke<float>(0x102D125411A7B6E6, recordingID); } // 0x102D125411A7B6E6 0x7116785E
+		static Any GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(Any p0, Any p1) { return invoke<Any>(0x0E48D1C262390950, p0, p1); } // 0x0E48D1C262390950 0x5B35EEB7
+		static float GET_POSITION_IN_RECORDING(Any p0) { return invoke<float>(0x2DACD605FC681475, p0); } // 0x2DACD605FC681475 0x7DCD644C
+		static float GET_TIME_POSITION_IN_RECORDING(Any p0) { return invoke<float>(0x5746F3A7AB7FE544, p0); } // 0x5746F3A7AB7FE544 0xF8C3E4A2
+		static void START_PLAYBACK_RECORDED_VEHICLE(Vehicle vehicle, int p1, char* playback, BOOL p3) { invoke<Void>(0x3F878F92B3A7A071, vehicle, p1, playback, p3); } // 0x3F878F92B3A7A071 0xCF614CA8
+		static void START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(Vehicle vehicle, Any p1, char* playback, Any p3, Any p4, Any p5) { invoke<Void>(0x7D80FD645D4DA346, vehicle, p1, playback, p3, p4, p5); } // 0x7D80FD645D4DA346 0x4E721AD2
+		static void _0x1F2E4E06DEA8992B(Vehicle p0, BOOL p1) { invoke<Void>(0x1F2E4E06DEA8992B, p0, p1); } // 0x1F2E4E06DEA8992B 0x01B91CD0
+		static void STOP_PLAYBACK_RECORDED_VEHICLE(Vehicle vehicle) { invoke<Void>(0x54833611C17ABDEA, vehicle); } // 0x54833611C17ABDEA 0xAE99C57C
+		static void PAUSE_PLAYBACK_RECORDED_VEHICLE(Any p0) { invoke<Void>(0x632A689BF42301B1, p0); } // 0x632A689BF42301B1 0xCCF54912
+		static void UNPAUSE_PLAYBACK_RECORDED_VEHICLE(Any p0) { invoke<Void>(0x8879EE09268305D5, p0); } // 0x8879EE09268305D5 0x59060F75
+		static BOOL IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Vehicle vehicle) { return invoke<BOOL>(0x1C8A4C2C19E68EEC, vehicle); } // 0x1C8A4C2C19E68EEC 0x61F7650D
+		static BOOL IS_PLAYBACK_USING_AI_GOING_ON_FOR_VEHICLE(Any p0) { return invoke<BOOL>(0xAEA8FD591FAD4106, p0); } // 0xAEA8FD591FAD4106 0x63022C58
+		static int GET_CURRENT_PLAYBACK_FOR_VEHICLE(Vehicle vehicle) { return invoke<int>(0x42BC05C27A946054, vehicle); } // 0x42BC05C27A946054 0xA3F44390
+		static void SKIP_TO_END_AND_STOP_PLAYBACK_RECORDED_VEHICLE(Any p0) { invoke<Void>(0xAB8E2EDA0C0A5883, p0); } // 0xAB8E2EDA0C0A5883 0x8DEA18C8
+		static void SET_PLAYBACK_SPEED(Vehicle vehicle, float speed) { invoke<Void>(0x6683AB880E427778, vehicle, speed); } // 0x6683AB880E427778 0x684E26E4
+		static void START_PLAYBACK_RECORDED_VEHICLE_USING_AI(Any p0, Any p1, Any* p2, float p3, Any p4) { invoke<Void>(0x29DE5FA52D00428C, p0, p1, p2, p3, p4); } // 0x29DE5FA52D00428C 0x8DE8E24E
+		static void SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE(Any p0, float p1) { invoke<Void>(0x9438F7AD68771A20, p0, p1); } // 0x9438F7AD68771A20 0xCF3EFA4B
+		static void SET_PLAYBACK_TO_USE_AI(Vehicle vehicle, int flag) { invoke<Void>(0xA549C3B37EA28131, vehicle, flag); } // 0xA549C3B37EA28131 0xB536CCD7
+		static void SET_PLAYBACK_TO_USE_AI_TRY_TO_REVERT_BACK_LATER(Any p0, Any p1, Any p2, BOOL p3) { invoke<Void>(0x6E63860BBB190730, p0, p1, p2, p3); } // 0x6E63860BBB190730 0x0C8ABAA4
+		static void _0x5845066D8A1EA7F7(Vehicle vehicle, float x, float y, float z, Any p4) { invoke<Void>(0x5845066D8A1EA7F7, vehicle, x, y, z, p4); } // 0x5845066D8A1EA7F7 0x943A58EB
+		static void _0x796A877E459B99EA(Any p0, float p1, float p2, float p3) { invoke<Void>(0x796A877E459B99EA, p0, p1, p2, p3); } // 0x796A877E459B99EA 0x5C9F477C
+		static void _0xFAF2A78061FD9EF4(Any p0, float p1, float p2, float p3) { invoke<Void>(0xFAF2A78061FD9EF4, p0, p1, p2, p3); } // 0xFAF2A78061FD9EF4 0xCD83C393
+		static void _0x063AE2B2CC273588(Any p0, BOOL p1) { invoke<Void>(0x063AE2B2CC273588, p0, p1); } // 0x063AE2B2CC273588 0x2EF8435C
+		static void EXPLODE_VEHICLE_IN_CUTSCENE(Vehicle vehicle, BOOL p1) { invoke<Void>(0x786A4EB67B01BF0B, vehicle, p1); } // 0x786A4EB67B01BF0B 0xA85207B5
+		static void ADD_VEHICLE_STUCK_CHECK_WITH_WARP(Any p0, float p1, Any p2, BOOL p3, BOOL p4, BOOL p5, Any p6) { invoke<Void>(0x2FA9923062DD396C, p0, p1, p2, p3, p4, p5, p6); } // 0x2FA9923062DD396C 0xC8B789AD
+		static void SET_VEHICLE_MODEL_IS_SUPPRESSED(Hash model, BOOL suppressed) { invoke<Void>(0x0FC2D89AC25A5814, model, suppressed); } // 0x0FC2D89AC25A5814 0x42A08C9B
+		static Vehicle GET_RANDOM_VEHICLE_IN_SPHERE(float x, float y, float z, float radius, Hash modelHash, int flags) { return invoke<Vehicle>(0x386F6CE5BAF6091C, x, y, z, radius, modelHash, flags); } // 0x386F6CE5BAF6091C 0x57216D03
+		static Vehicle GET_RANDOM_VEHICLE_FRONT_BUMPER_IN_SPHERE(float p0, float p1, float p2, float p3, int p4, int p5, int p6) { return invoke<Vehicle>(0xC5574E0AEB86BA68, p0, p1, p2, p3, p4, p5, p6); } // 0xC5574E0AEB86BA68 0xDCADEB66
+		static Vehicle GET_RANDOM_VEHICLE_BACK_BUMPER_IN_SPHERE(float p0, float p1, float p2, float p3, int p4, int p5, int p6) { return invoke<Vehicle>(0xB50807EABE20A8DC, p0, p1, p2, p3, p4, p5, p6); } // 0xB50807EABE20A8DC 0xD6343F6B
+		static Vehicle GET_CLOSEST_VEHICLE(float x, float y, float z, float radius, Hash modelHash, int flags) { return invoke<Vehicle>(0xF73EB622C4F1689B, x, y, z, radius, modelHash, flags); } // 0xF73EB622C4F1689B 0xD7E26B2C
+		static Entity GET_TRAIN_CARRIAGE(Vehicle train, int trailerNumber) { return invoke<Entity>(0x08AAFD0814722BC3, train, trailerNumber); } // 0x08AAFD0814722BC3 0x2544E7A6
+		static void DELETE_MISSION_TRAIN(Vehicle* train) { invoke<Void>(0x5B76B14AE875C795, train); } // 0x5B76B14AE875C795 0x86C9497D
+		static void SET_MISSION_TRAIN_AS_NO_LONGER_NEEDED(Vehicle* train, BOOL p1) { invoke<Void>(0xBBE7648349B49BE8, train, p1); } // 0xBBE7648349B49BE8 0x19808560
+		static void SET_MISSION_TRAIN_COORDS(Vehicle train, float x, float y, float z) { invoke<Void>(0x591CA673AA6AB736, train, x, y, z); } // 0x591CA673AA6AB736 0xD6D70803
+		static BOOL IS_THIS_MODEL_A_BOAT(Hash model) { return invoke<BOOL>(0x45A9187928F4B9E3, model); } // 0x45A9187928F4B9E3 0x10F6085C
+		static BOOL _IS_THIS_MODEL_A_JETSKI(Hash model) { return invoke<BOOL>(0x9537097412CF75FE, model); } // 0x9537097412CF75FE
+		static BOOL IS_THIS_MODEL_A_PLANE(Hash model) { return invoke<BOOL>(0xA0948AB42D7BA0DE, model); } // 0xA0948AB42D7BA0DE 0x3B3907BB
+		static BOOL IS_THIS_MODEL_A_HELI(Hash model) { return invoke<BOOL>(0xDCE4334788AF94EA, model); } // 0xDCE4334788AF94EA 0x8AF7F568
+		static BOOL IS_THIS_MODEL_A_CAR(Hash model) { return invoke<BOOL>(0x7F6DB52EEFC96DF8, model); } // 0x7F6DB52EEFC96DF8 0x60E4C22F
+		static BOOL IS_THIS_MODEL_A_TRAIN(Hash model) { return invoke<BOOL>(0xAB935175B22E822B, model); } // 0xAB935175B22E822B 0xF87DCFFD
+		static BOOL IS_THIS_MODEL_A_BIKE(Hash model) { return invoke<BOOL>(0xB50C0B0CEDC6CE84, model); } // 0xB50C0B0CEDC6CE84 0x7E702CDD
+		static BOOL IS_THIS_MODEL_A_BICYCLE(Hash model) { return invoke<BOOL>(0xBF94DD42F63BDED2, model); } // 0xBF94DD42F63BDED2 0x328E6FF5
+		static BOOL IS_THIS_MODEL_A_QUADBIKE(Hash model) { return invoke<BOOL>(0x39DAC362EE65FA28, model); } // 0x39DAC362EE65FA28 0xC1625277
+		static void SET_HELI_BLADES_FULL_SPEED(Vehicle vehicle) { invoke<Void>(0xA178472EBB8AE60D, vehicle); } // 0xA178472EBB8AE60D 0x033A9408
+		static void SET_HELI_BLADES_SPEED(Vehicle vehicle, float speed) { invoke<Void>(0xFD280B4D7F3ABC4D, vehicle, speed); } // 0xFD280B4D7F3ABC4D 0x5C7D4EA9
+		static void _0x99CAD8E7AFDB60FA(Vehicle vehicle, float p1, float p2) { invoke<Void>(0x99CAD8E7AFDB60FA, vehicle, p1, p2); } // 0x99CAD8E7AFDB60FA 0x1128A45B
+		static void SET_VEHICLE_CAN_BE_TARGETTED(Vehicle vehicle, BOOL state) { invoke<Void>(0x3750146A28097A82, vehicle, state); } // 0x3750146A28097A82 0x64B70B1D
+		static void _0xDBC631F109350B8C(Vehicle vehicle, BOOL p1) { invoke<Void>(0xDBC631F109350B8C, vehicle, p1); } // 0xDBC631F109350B8C 0x486C1280
+		static void SET_VEHICLE_CAN_BE_VISIBLY_DAMAGED(Vehicle vehicle, BOOL state) { invoke<Void>(0x4C7028F78FFD3681, vehicle, state); } // 0x4C7028F78FFD3681 0xC5D94017
+		static void _0x1AA8A837D2169D94(Vehicle vehicle, BOOL p1) { invoke<Void>(0x1AA8A837D2169D94, vehicle, p1); } // 0x1AA8A837D2169D94 0x009AB49E
+		static void _0x2311DD7159F00582(Vehicle vehicle, BOOL p1) { invoke<Void>(0x2311DD7159F00582, vehicle, p1); } // 0x2311DD7159F00582 0x758C5E2E
+		static float GET_VEHICLE_DIRT_LEVEL(Vehicle vehicle) { return invoke<float>(0x8F17BC8BA08DA62B, vehicle); } // 0x8F17BC8BA08DA62B 0xFD15C065
+		static void SET_VEHICLE_DIRT_LEVEL(Vehicle vehicle, float dirtLevel) { invoke<Void>(0x79D3B596FE44EE8B, vehicle, dirtLevel); } // 0x79D3B596FE44EE8B 0x2B39128B
+		static BOOL _IS_VEHICLE_DAMAGED(Vehicle vehicle) { return invoke<BOOL>(0xBCDC5017D3CE1E9E, vehicle); } // 0xBCDC5017D3CE1E9E 0xDAC523BC
+		static BOOL IS_VEHICLE_DOOR_FULLY_OPEN(Vehicle v, int doorIndex) { return invoke<BOOL>(0x3E933CFF7B111C22, v, doorIndex); } // 0x3E933CFF7B111C22 0xC2385B6F
+		static void SET_VEHICLE_ENGINE_ON(Vehicle vehicle, BOOL value, BOOL instantly, BOOL noAutoTurnOn) { invoke<Void>(0x2497C4717C8B881E, vehicle, value, instantly, noAutoTurnOn); } // 0x2497C4717C8B881E 0x7FBC86F1
+		static void SET_VEHICLE_UNDRIVEABLE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x8ABA6AF54B942B95, vehicle, toggle); } // 0x8ABA6AF54B942B95 0x48D02A4E
+		static void SET_VEHICLE_PROVIDES_COVER(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x5AFEEDD9BB2899D7, vehicle, toggle); } // 0x5AFEEDD9BB2899D7 0xEFC01CA9
+		static void SET_VEHICLE_DOOR_CONTROL(Vehicle vehicle, int doorIndex, int speed, float angle) { invoke<Void>(0xF2BFA0430F0A0FCB, vehicle, doorIndex, speed, angle); } // 0xF2BFA0430F0A0FCB 0x572DD360
+		static void SET_VEHICLE_DOOR_LATCHED(Vehicle vehicle, int doorIndex, BOOL forceClose, BOOL lock, BOOL p4) { invoke<Void>(0xA5A9653A8D2CAF48, vehicle, doorIndex, forceClose, lock, p4); } // 0xA5A9653A8D2CAF48 0x4EB7BBFC
+		static float GET_VEHICLE_DOOR_ANGLE_RATIO(Vehicle vehicle, int door) { return invoke<float>(0xFE3F9C29F7B32BD5, vehicle, door); } // 0xFE3F9C29F7B32BD5 0x0E399C26
+		static Ped _GET_PED_USING_VEHICLE_DOOR(Vehicle vehicle, int doorIndex) { return invoke<Ped>(0x218297BF0CFD853B, vehicle, doorIndex); } // 0x218297BF0CFD853B
+		static void SET_VEHICLE_DOOR_SHUT(Vehicle vehicle, int doorIndex, BOOL closeInstantly) { invoke<Void>(0x93D9BD300D7789E5, vehicle, doorIndex, closeInstantly); } // 0x93D9BD300D7789E5 0x142606BD
+		static void SET_VEHICLE_DOOR_BROKEN(Vehicle vehicle, int doorIndex, BOOL deleteDoor) { invoke<Void>(0xD4D4F6A4AB575A33, vehicle, doorIndex, deleteDoor); } // 0xD4D4F6A4AB575A33 0x8147FEA7
+		static void SET_VEHICLE_CAN_BREAK(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x59BF8C3D52C92F66, vehicle, toggle); } // 0x59BF8C3D52C92F66 0x90A810D1
+		static BOOL DOES_VEHICLE_HAVE_ROOF(Vehicle vehicle) { return invoke<BOOL>(0x8AC862B0B32C5B80, vehicle); } // 0x8AC862B0B32C5B80 0xDB817403
+		static BOOL IS_BIG_VEHICLE(Vehicle vehicle) { return invoke<BOOL>(0x9F243D3919F442FE, vehicle); } // 0x9F243D3919F442FE 0x9CDBA8DE
+		static int GET_NUMBER_OF_VEHICLE_COLOURS(Vehicle vehicle) { return invoke<int>(0x3B963160CD65D41E, vehicle); } // 0x3B963160CD65D41E 0xF2442EE2
+		static void SET_VEHICLE_COLOUR_COMBINATION(Vehicle vehicle, int colorCombination) { invoke<Void>(0x33E8CD3322E2FE31, vehicle, colorCombination); } // 0x33E8CD3322E2FE31 0xA557AEAD
+		static int GET_VEHICLE_COLOUR_COMBINATION(Vehicle vehicle) { return invoke<int>(0x6A842D197F845D56, vehicle); } // 0x6A842D197F845D56 0x77AC1B4C
+		static void SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x31B927BBC44156CD, vehicle, toggle); } // 0x31B927BBC44156CD 0x14413319
+		static void _0xBE5C1255A1830FF5(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xBE5C1255A1830FF5, vehicle, toggle); } // 0xBE5C1255A1830FF5 0xA6D8D7A5
+		static void _0x9BECD4B9FEF3F8A6(Vehicle vehicle, BOOL p1) { invoke<Void>(0x9BECD4B9FEF3F8A6, vehicle, p1); } // 0x9BECD4B9FEF3F8A6 0xACAB8FF3
+		static void _0x88BC673CA9E0AE99(Vehicle vehicle, BOOL p1) { invoke<Void>(0x88BC673CA9E0AE99, vehicle, p1); } // 0x88BC673CA9E0AE99 0xF0E5C41D
+		static void _0xE851E480B814D4BA(Vehicle vehicle, BOOL p1) { invoke<Void>(0xE851E480B814D4BA, vehicle, p1); } // 0xE851E480B814D4BA 0x2F98B4B7
+		static void GET_RANDOM_VEHICLE_MODEL_IN_MEMORY(BOOL p0, int modelHash, int* p2) { invoke<Void>(0x055BF0AC0C34F4FD, p0, modelHash, p2); } // 0x055BF0AC0C34F4FD 0xE2C45631
+		static int GET_VEHICLE_DOOR_LOCK_STATUS(Vehicle vehicle) { return invoke<int>(0x25BC98A59C2EA962, vehicle); } // 0x25BC98A59C2EA962 0x0D72CEF2
+		static BOOL IS_VEHICLE_DOOR_DAMAGED(Vehicle veh, int doorID) { return invoke<BOOL>(0xB8E181E559464527, veh, doorID); } // 0xB8E181E559464527 0x4999E3C3
+		static void _SET_VEHICLE_DOOR_CAN_BREAK(Vehicle vehicle, int doorIndex, BOOL isBreakable) { invoke<Void>(0x2FA133A4A9D37ED8, vehicle, doorIndex, isBreakable); } // 0x2FA133A4A9D37ED8 0x065B92B3
+		static BOOL IS_VEHICLE_BUMPER_BOUNCING(Vehicle vehicle, BOOL frontBumper) { return invoke<BOOL>(0x27B926779DEB502D, vehicle, frontBumper); } // 0x27B926779DEB502D 0xB3A2CC4F
+		static BOOL IS_VEHICLE_BUMPER_BROKEN_OFF(Vehicle vehicle, BOOL front) { return invoke<BOOL>(0x468056A6BB6F3846, vehicle, front); } // 0x468056A6BB6F3846 0xAF25C027
+		static BOOL IS_COP_VEHICLE_IN_AREA_3D(float x1, float x2, float y1, float y2, float z1, float z2) { return invoke<BOOL>(0x7EEF65D5F153E26A, x1, x2, y1, y2, z1, z2); } // 0x7EEF65D5F153E26A 0xFB16C6D1
+		static BOOL IS_VEHICLE_ON_ALL_WHEELS(Vehicle vehicle) { return invoke<BOOL>(0xB104CD1BABF302E2, vehicle); } // 0xB104CD1BABF302E2 0x10089F8E
+		static Hash GET_VEHICLE_LAYOUT_HASH(Vehicle vehicle) { return invoke<Hash>(0x28D37D4F71AC5C58, vehicle); } // 0x28D37D4F71AC5C58 0xE0B35187
+		static Hash _GET_VEHICLE_SEAT_CLIPSET_HASH(Vehicle vehicle, int seat) { return invoke<Hash>(0xA01BC64DD4BFBBAC, vehicle, seat); } // 0xA01BC64DD4BFBBAC
+		static void SET_RENDER_TRAIN_AS_DERAILED(Vehicle train, BOOL toggle) { invoke<Void>(0x317B11A312DF5534, train, toggle); } // 0x317B11A312DF5534 0x899D9092
+		static void SET_VEHICLE_EXTRA_COLOURS(Vehicle vehicle, int pearlescentColor, int wheelColor) { invoke<Void>(0x2036F561ADD12E33, vehicle, pearlescentColor, wheelColor); } // 0x2036F561ADD12E33 0x515DB2A0
+		static void GET_VEHICLE_EXTRA_COLOURS(Vehicle vehicle, int* pearlescentColor, int* wheelColor) { invoke<Void>(0x3BC4245933A166F7, vehicle, pearlescentColor, wheelColor); } // 0x3BC4245933A166F7 0x80E4659B
+		static void STOP_ALL_GARAGE_ACTIVITY() { invoke<Void>(0x0F87E938BDF29D66); } // 0x0F87E938BDF29D66 0x17A0BCE5
+		static void SET_VEHICLE_FIXED(Vehicle vehicle) { invoke<Void>(0x115722B1B9C14C1C, vehicle); } // 0x115722B1B9C14C1C 0x17469AA1
+		static void SET_VEHICLE_DEFORMATION_FIXED(Vehicle vehicle) { invoke<Void>(0x953DA1E1B12C0491, vehicle); } // 0x953DA1E1B12C0491 0xDD2920C8
+		static void _0x206BC5DC9D1AC70A(Vehicle vehicle, BOOL p1) { invoke<Void>(0x206BC5DC9D1AC70A, vehicle, p1); } // 0x206BC5DC9D1AC70A
+		static void _0x51BB2D88D31A914B(Vehicle vehicle, BOOL p1) { invoke<Void>(0x51BB2D88D31A914B, vehicle, p1); } // 0x51BB2D88D31A914B 0x88F0F7E7
+		static void _0x192547247864DFDD(Vehicle vehicle, BOOL p1) { invoke<Void>(0x192547247864DFDD, vehicle, p1); } // 0x192547247864DFDD 0x90D6EE57
+		static void SET_DISABLE_VEHICLE_PETROL_TANK_FIRES(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x465BF26AB9684352, vehicle, toggle); } // 0x465BF26AB9684352 0xC40192B5
+		static void SET_DISABLE_VEHICLE_PETROL_TANK_DAMAGE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x37C8252A7C92D017, vehicle, toggle); } // 0x37C8252A7C92D017 0xAD3E05F2
+		static void _0x91A0BD635321F145(Vehicle vehicle, BOOL p1) { invoke<Void>(0x91A0BD635321F145, vehicle, p1); } // 0x91A0BD635321F145 0x1784BA1A
+		static void _0xC50CE861B55EAB8B(Vehicle vehicle, BOOL p1) { invoke<Void>(0xC50CE861B55EAB8B, vehicle, p1); } // 0xC50CE861B55EAB8B 0x40C323AE
+		static void _0x6EBFB22D646FFC18(Vehicle vehicle, BOOL p1) { invoke<Void>(0x6EBFB22D646FFC18, vehicle, p1); } // 0x6EBFB22D646FFC18 0x847F1304
+		static void _0x25367DE49D64CF16(Vehicle vehicle, BOOL p1) { invoke<Void>(0x25367DE49D64CF16, vehicle, p1); } // 0x25367DE49D64CF16 0xCBD98BA1
+		static void REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(Ped x1, Ped y1, Ped z1, Ped x2, Ped y2, Ped z2, Vehicle unk) { invoke<Void>(0x46A1E1A299EC4BBA, x1, y1, z1, x2, y2, z2, unk); } // 0x46A1E1A299EC4BBA 0x42CC15E0
+		static void SET_VEHICLE_STEER_BIAS(Vehicle vehicle, float value) { invoke<Void>(0x42A8EC77D5150CBE, vehicle, value); } // 0x42A8EC77D5150CBE 0x7357C1EB
+		static BOOL IS_VEHICLE_EXTRA_TURNED_ON(Vehicle vehicle, int extraId) { return invoke<BOOL>(0xD2E6822DBFD6C8BD, vehicle, extraId); } // 0xD2E6822DBFD6C8BD 0x042098B5
+		static void SET_VEHICLE_EXTRA(Vehicle vehicle, int extraId, BOOL disable) { invoke<Void>(0x7EE3A3C5E4A40CC9, vehicle, extraId, disable); } // 0x7EE3A3C5E4A40CC9 0x642D065C
+		static BOOL DOES_EXTRA_EXIST(Vehicle vehicle, int extraId) { return invoke<BOOL>(0x1262D55792428154, vehicle, extraId); } // 0x1262D55792428154 0x409411CC
+		static void SET_CONVERTIBLE_ROOF(Vehicle vehicle, BOOL p1) { invoke<Void>(0xF39C4F538B5124C2, vehicle, p1); } // 0xF39C4F538B5124C2 0xC87B6A51
+		static void LOWER_CONVERTIBLE_ROOF(Vehicle vehicle, BOOL instantlyLower) { invoke<Void>(0xDED51F703D0FA83D, vehicle, instantlyLower); } // 0xDED51F703D0FA83D 0xC5F72EAE
+		static void RAISE_CONVERTIBLE_ROOF(Vehicle vehicle, BOOL instantlyRaise) { invoke<Void>(0x8F5FB35D7E88FC70, vehicle, instantlyRaise); } // 0x8F5FB35D7E88FC70 0xA4E4CBA3
+		static int GET_CONVERTIBLE_ROOF_STATE(Vehicle vehicle) { return invoke<int>(0xF8C397922FC03F41, vehicle); } // 0xF8C397922FC03F41 0x1B09714D
+		static BOOL IS_VEHICLE_A_CONVERTIBLE(Vehicle vehicle, BOOL p1) { return invoke<BOOL>(0x52F357A30698BCCE, vehicle, p1); } // 0x52F357A30698BCCE 0x6EF54490
+		static BOOL IS_VEHICLE_STOPPED_AT_TRAFFIC_LIGHTS(Vehicle vehicle) { return invoke<BOOL>(0x2959F696AE390A99, vehicle); } // 0x2959F696AE390A99 0x69200FA4
+		static void SET_VEHICLE_DAMAGE(Vehicle vehicle, float xOffset, float yOffset, float zOffset, float damage, float radius, BOOL p6) { invoke<Void>(0xA1DD317EA8FD4F29, vehicle, xOffset, yOffset, zOffset, damage, radius, p6); } // 0xA1DD317EA8FD4F29 0x21B458B2
+		static float GET_VEHICLE_ENGINE_HEALTH(Vehicle vehicle) { return invoke<float>(0xC45D23BAF168AAB8, vehicle); } // 0xC45D23BAF168AAB8 0x8880038A
+		static void SET_VEHICLE_ENGINE_HEALTH(Vehicle vehicle, float health) { invoke<Void>(0x45F6D8EEF34ABEF1, vehicle, health); } // 0x45F6D8EEF34ABEF1 0x1B760FB5
+		static float GET_VEHICLE_PETROL_TANK_HEALTH(Vehicle vehicle) { return invoke<float>(0x7D5DABE888D2D074, vehicle); } // 0x7D5DABE888D2D074 0xE41595CE
+		static void SET_VEHICLE_PETROL_TANK_HEALTH(Vehicle vehicle, float health) { invoke<Void>(0x70DB57649FA8D0D8, vehicle, health); } // 0x70DB57649FA8D0D8 0x660A3692
+		static BOOL IS_VEHICLE_STUCK_TIMER_UP(Vehicle vehicle, int p1, int p2) { return invoke<BOOL>(0x679BE1DAF71DA874, vehicle, p1, p2); } // 0x679BE1DAF71DA874 0x2FCF58C1
+		static void RESET_VEHICLE_STUCK_TIMER(Vehicle vehicle, int nullAttributes) { invoke<Void>(0xD7591B0065AFAA7A, vehicle, nullAttributes); } // 0xD7591B0065AFAA7A 0xEF2A6016
+		static BOOL IS_VEHICLE_DRIVEABLE(Vehicle vehicle, BOOL isOnFireCheck) { return invoke<BOOL>(0x4C241E39B23DF959, vehicle, isOnFireCheck); } // 0x4C241E39B23DF959 0x41A7267A
+		static void SET_VEHICLE_HAS_BEEN_OWNED_BY_PLAYER(Vehicle vehicle, BOOL owned) { invoke<Void>(0x2B5F9D2AF1F1722D, vehicle, owned); } // 0x2B5F9D2AF1F1722D 0xB4D3DBFB
+		static void SET_VEHICLE_NEEDS_TO_BE_HOTWIRED(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xFBA550EA44404EE6, vehicle, toggle); } // 0xFBA550EA44404EE6 0xD8260751
+		static void _0x9F3F689B814F2599(Vehicle vehicle, BOOL p1) { invoke<Void>(0x9F3F689B814F2599, vehicle, p1); } // 0x9F3F689B814F2599
+		static void _0x4E74E62E0A97E901(Vehicle vehicle, BOOL p1) { invoke<Void>(0x4E74E62E0A97E901, vehicle, p1); } // 0x4E74E62E0A97E901
+		static void START_VEHICLE_HORN(Vehicle vehicle, int duration, Hash mode, BOOL forever) { invoke<Void>(0x9C8C6504B5B63D2C, vehicle, duration, mode, forever); } // 0x9C8C6504B5B63D2C 0x0DF5ADB3
+		static void _SET_VEHICLE_SILENT(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x9D44FCCE98450843, vehicle, toggle); } // 0x9D44FCCE98450843 0x968E5770
+		static void SET_VEHICLE_HAS_STRONG_AXLES(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x92F0CF722BC4202F, vehicle, toggle); } // 0x92F0CF722BC4202F 0x0D1CBC65
+		static char* GET_DISPLAY_NAME_FROM_VEHICLE_MODEL(Hash modelHash) { return invoke<char*>(0xB215AAC32D25D019, modelHash); } // 0xB215AAC32D25D019 0xEC86DF39
+		static Vector3 GET_VEHICLE_DEFORMATION_AT_POS(Vehicle vehicle, float offsetX, float offsetY, float offsetZ) { return invoke<Vector3>(0x4EC6CFBC7B2E9536, vehicle, offsetX, offsetY, offsetZ); } // 0x4EC6CFBC7B2E9536 0xABF02075
+		static void SET_VEHICLE_LIVERY(Vehicle vehicle, int liveryIndex) { invoke<Void>(0x60BF608F1B8CD1B6, vehicle, liveryIndex); } // 0x60BF608F1B8CD1B6 0x7AD87059
+		static int GET_VEHICLE_LIVERY(Vehicle trailers2) { return invoke<int>(0x2BB9230590DA5E8A, trailers2); } // 0x2BB9230590DA5E8A 0xEC82A51D
+		static int GET_VEHICLE_LIVERY_COUNT(Vehicle vehicle) { return invoke<int>(0x87B63E25A529D526, vehicle); } // 0x87B63E25A529D526 0xFB0CA947
+		static BOOL IS_VEHICLE_WINDOW_INTACT(Vehicle vehicle, int windowIndex) { return invoke<BOOL>(0x46E571A0E20D01F1, vehicle, windowIndex); } // 0x46E571A0E20D01F1 0xAC4EF23D
+		static BOOL ARE_ALL_VEHICLE_WINDOWS_INTACT(Vehicle vehicle) { return invoke<BOOL>(0x11D862A3E977A9EF, vehicle); } // 0x11D862A3E977A9EF 0xBB619744
+		static BOOL ARE_ANY_VEHICLE_SEATS_FREE(Vehicle vehicle) { return invoke<BOOL>(0x2D34FC3BC4ADB780, vehicle); } // 0x2D34FC3BC4ADB780 0x648E685A
+		static void RESET_VEHICLE_WHEELS(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x21D2E5662C1F6FED, vehicle, toggle); } // 0x21D2E5662C1F6FED 0xD5FFE779
+		static BOOL IS_HELI_PART_BROKEN(Vehicle vehicle, BOOL p1, BOOL p2, BOOL p3) { return invoke<BOOL>(0xBC74B4BE25EB6C8A, vehicle, p1, p2, p3); } // 0xBC74B4BE25EB6C8A 0xF4E4C439
+		static float _GET_HELI_MAIN_ROTOR_HEALTH(Vehicle vehicle) { return invoke<float>(0xE4CB7541F413D2C5, vehicle); } // 0xE4CB7541F413D2C5 0xF01E2AAB
+		static float _GET_HELI_TAIL_ROTOR_HEALTH(Vehicle vehicle) { return invoke<float>(0xAE8CE82A4219AC8C, vehicle); } // 0xAE8CE82A4219AC8C 0xA41BC13D
+		static float GET_HELI_TAIL_BOOM_HEALTH(Vehicle vehicle) { return invoke<float>(0xAC51915D27E4A5F7, vehicle); } // 0xAC51915D27E4A5F7 0x8A68388F
+		static BOOL WAS_COUNTER_ACTIVATED(Vehicle vehicle, Any p1) { return invoke<BOOL>(0x3EC8BF18AA453FE9, vehicle, p1); } // 0x3EC8BF18AA453FE9 0x2916D69B
+		static void SET_VEHICLE_NAME_DEBUG(Vehicle vehicle, char* name) { invoke<Void>(0xBFDF984E2C22B94F, vehicle, name); } // 0xBFDF984E2C22B94F 0xA712FF5C
+		static void SET_VEHICLE_EXPLODES_ON_HIGH_EXPLOSION_DAMAGE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x71B0892EC081D60A, vehicle, toggle); } // 0x71B0892EC081D60A 0x38CC692B
+		static void _0x3441CAD2F2231923(Vehicle vehicle, BOOL p1) { invoke<Void>(0x3441CAD2F2231923, vehicle, p1); } // 0x3441CAD2F2231923 0xC306A9A3
+		static void _0x2B6747FAA9DB9D6B(Vehicle vehicle, BOOL p1) { invoke<Void>(0x2B6747FAA9DB9D6B, vehicle, p1); } // 0x2B6747FAA9DB9D6B 0x95A9ACCB
+		static void CONTROL_LANDING_GEAR(Vehicle vehicle, int state) { invoke<Void>(0xCFC8BE9A5E1FE575, vehicle, state); } // 0xCFC8BE9A5E1FE575 0x24F873FB
+		static int GET_LANDING_GEAR_STATE(Vehicle vehicle) { return invoke<int>(0x9B0F3DCA3DB0F4CD, vehicle); } // 0x9B0F3DCA3DB0F4CD 0xA6F02670
+		static BOOL IS_ANY_VEHICLE_NEAR_POINT(float x, float y, float z, float radius) { return invoke<BOOL>(0x61E1DD6125A3EEE6, x, y, z, radius); } // 0x61E1DD6125A3EEE6 0x2867A834
+		static void REQUEST_VEHICLE_HIGH_DETAIL_MODEL(Vehicle vehicle) { invoke<Void>(0xA6E9FDCB2C76785E, vehicle); } // 0xA6E9FDCB2C76785E 0x9DA21956
+		static void REMOVE_VEHICLE_HIGH_DETAIL_MODEL(Vehicle vehicle) { invoke<Void>(0x00689CDE5F7C6787, vehicle); } // 0x00689CDE5F7C6787 0x382BE070
+		static BOOL IS_VEHICLE_HIGH_DETAIL(Vehicle vehicle) { return invoke<BOOL>(0x1F25887F3C104278, vehicle); } // 0x1F25887F3C104278 0x55D41928
+		static void REQUEST_VEHICLE_ASSET(Hash vehicleHash, int vehicleAsset) { invoke<Void>(0x81A15811460FAB3A, vehicleHash, vehicleAsset); } // 0x81A15811460FAB3A 0x902B4F06
+		static BOOL HAS_VEHICLE_ASSET_LOADED(int vehicleAsset) { return invoke<BOOL>(0x1BBE0523B8DB9A21, vehicleAsset); } // 0x1BBE0523B8DB9A21 0x8DAAC3CB
+		static void REMOVE_VEHICLE_ASSET(int vehicleAsset) { invoke<Void>(0xACE699C71AB9DEB5, vehicleAsset); } // 0xACE699C71AB9DEB5 0x9620E9C6
+		static void _SET_TOW_TRUCK_CRANE_HEIGHT(Vehicle towTruck, float height) { invoke<Void>(0xFE54B92A344583CA, towTruck, height); } // 0xFE54B92A344583CA 0x88236E22
+		static void ATTACH_VEHICLE_TO_TOW_TRUCK(Vehicle towTruck, Vehicle vehicle, int index, float hookOffsetX, float hookOffsetY, float hookOffsetZ) { invoke<Void>(0x29A16F8D621C4508, towTruck, vehicle, index, hookOffsetX, hookOffsetY, hookOffsetZ); } // 0x29A16F8D621C4508 0x8151571A
+		static void DETACH_VEHICLE_FROM_TOW_TRUCK(Vehicle towTruck, Vehicle vehicle) { invoke<Void>(0xC2DB6B6708350ED8, towTruck, vehicle); } // 0xC2DB6B6708350ED8 0xC666CF33
+		static BOOL DETACH_VEHICLE_FROM_ANY_TOW_TRUCK(Vehicle vehicle) { return invoke<BOOL>(0xD0E9CE05A1E68CD8, vehicle); } // 0xD0E9CE05A1E68CD8 0x3BF93651
+		static BOOL IS_VEHICLE_ATTACHED_TO_TOW_TRUCK(Vehicle towTruck, Vehicle vehicle) { return invoke<BOOL>(0x146DF9EC4C4B9FD4, towTruck, vehicle); } // 0x146DF9EC4C4B9FD4 0x9699CFDC
+		static Entity GET_ENTITY_ATTACHED_TO_TOW_TRUCK(Vehicle towTruck) { return invoke<Entity>(0xEFEA18DCF10F8F75, towTruck); } // 0xEFEA18DCF10F8F75 0x11EC7844
+		static Any SET_VEHICLE_AUTOMATICALLY_ATTACHES(Vehicle vehicle, BOOL p1, Any p2) { return invoke<Any>(0x8BA6F76BC53A1493, vehicle, p1, p2); } // 0x8BA6F76BC53A1493 0x4273A8D3
+		static void SET_VEHICLE_BULLDOZER_ARM_POSITION(Vehicle vehicle, float position, BOOL p2) { invoke<Void>(0xF8EBCCC96ADB9FB7, vehicle, position, p2); } // 0xF8EBCCC96ADB9FB7 0xED23C8A3
+		static void _0x56B94C6D7127DFBA(Any p0, float p1, BOOL p2) { invoke<Void>(0x56B94C6D7127DFBA, p0, p1, p2); } // 0x56B94C6D7127DFBA 0xB1A52EF7
+		static void _0x1093408B4B9D1146(Any p0, float p1) { invoke<Void>(0x1093408B4B9D1146, p0, p1); } // 0x1093408B4B9D1146 0xF30C566F
+		static void _SET_DESIRED_VERTICAL_FLIGHT_PHASE(Vehicle vehicle, float angleRatio) { invoke<Void>(0x30D779DE7C4F6DD3, vehicle, angleRatio); } // 0x30D779DE7C4F6DD3 0xA7DF64D7
+		static void _SET_VERTICAL_FLIGHT_PHASE(Vehicle vehicle, float angle) { invoke<Void>(0x9AA47FFF660CB932, vehicle, angle); } // 0x9AA47FFF660CB932 0xDD7936F5
+		static BOOL _0xA4822F1CF23F4810(Vector3* outVec, Any p1, Vector3* outVec1, Any p3, Any p4, Any p5, Any p6, Any p7, Any p8) { return invoke<BOOL>(0xA4822F1CF23F4810, outVec, p1, outVec1, p3, p4, p5, p6, p7, p8); } // 0xA4822F1CF23F4810 0x34E02FCD
+		static void SET_VEHICLE_BURNOUT(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xFB8794444A7D60FB, vehicle, toggle); } // 0xFB8794444A7D60FB 0x9B6EF0EA
+		static BOOL IS_VEHICLE_IN_BURNOUT(Vehicle vehicle) { return invoke<BOOL>(0x1297A88E081430EB, vehicle); } // 0x1297A88E081430EB 0x6632BC12
+		static void SET_VEHICLE_REDUCE_GRIP(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x222FF6A823D122E2, vehicle, toggle); } // 0x222FF6A823D122E2 0x90D3A0D9
+		static void SET_VEHICLE_INDICATOR_LIGHTS(Vehicle vehicle, int turnSignal, BOOL toggle) { invoke<Void>(0xB5D45264751B7DF0, vehicle, turnSignal, toggle); } // 0xB5D45264751B7DF0 0xA6073B5D
+		static void SET_VEHICLE_BRAKE_LIGHTS(Vehicle vehicle, BOOL p1) { invoke<Void>(0x92B35082E0B42F66, vehicle, p1); } // 0x92B35082E0B42F66 0x6D9BA11E
+		static void SET_VEHICLE_HANDBRAKE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x684785568EF26A22, vehicle, toggle); } // 0x684785568EF26A22 0xBA729A25
+		static void _0x48ADC8A773564670() { invoke<Void>(0x48ADC8A773564670); } // 0x48ADC8A773564670 0x37BC6ACB
+		static BOOL _0x91D6DD290888CBAB() { return invoke<BOOL>(0x91D6DD290888CBAB); } // 0x91D6DD290888CBAB 0x71D898EF
+		static void _0x51DB102F4A3BA5E0(BOOL p0) { invoke<Void>(0x51DB102F4A3BA5E0, p0); } // 0x51DB102F4A3BA5E0 0x0B0523B0
+		static BOOL GET_VEHICLE_TRAILER_VEHICLE(Vehicle vehicle, Vehicle* trailer) { return invoke<BOOL>(0x1CDD6BADC297830D, vehicle, trailer); } // 0x1CDD6BADC297830D 0xAE84D758
+		static void _0xCAC66558B944DA67(char* vehicle, BOOL p1) { invoke<Void>(0xCAC66558B944DA67, vehicle, p1); } // 0xCAC66558B944DA67 0x0B200CE2
+		static void SET_VEHICLE_RUDDER_BROKEN(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x09606148B6C71DEF, vehicle, toggle); } // 0x09606148B6C71DEF 0x3FAC3CD4
+		static void _0x1A78AD3D8240536F(Vehicle vehicle, BOOL p1) { invoke<Void>(0x1A78AD3D8240536F, vehicle, p1); } // 0x1A78AD3D8240536F 0x0858678C
+		static float _GET_VEHICLE_MAX_SPEED(Vehicle vehicle) { return invoke<float>(0x53AF99BAA671CA47, vehicle); } // 0x53AF99BAA671CA47 0x7D1A0616
+		static float GET_VEHICLE_MAX_BRAKING(Vehicle vehicle) { return invoke<float>(0xAD7E85FC227197C4, vehicle); } // 0xAD7E85FC227197C4 0x03B926F6
+		static float GET_VEHICLE_MAX_TRACTION(Vehicle vehicle) { return invoke<float>(0xA132FB5370554DB0, vehicle); } // 0xA132FB5370554DB0 0x7E5A1587
+		static float GET_VEHICLE_ACCELERATION(Vehicle vehicle) { return invoke<float>(0x5DD35C8D074E57AE, vehicle); } // 0x5DD35C8D074E57AE 0x00478321
+		static float _GET_VEHICLE_MODEL_MAX_SPEED(Hash modelHash) { return invoke<float>(0xF417C2502FFFED43, modelHash); } // 0xF417C2502FFFED43 0x8F291C4A
+		static float GET_VEHICLE_MODEL_MAX_BRAKING(Hash modelHash) { return invoke<float>(0xDC53FD41B4ED944C, modelHash); } // 0xDC53FD41B4ED944C 0x7EF02883
+		static float _GET_VEHICLE_MODEL_HAND_BRAKE(Hash modelHash) { return invoke<float>(0xBFBA3BA79CFF7EBF, modelHash); } // 0xBFBA3BA79CFF7EBF 0xF3A7293F
+		static float GET_VEHICLE_MODEL_MAX_TRACTION(Hash modelHash) { return invoke<float>(0x539DE94D44FDFD0D, modelHash); } // 0x539DE94D44FDFD0D 0x7F985597
+		static float GET_VEHICLE_MODEL_ACCELERATION(Hash modelHash) { return invoke<float>(0x8C044C5C84505B6A, modelHash); } // 0x8C044C5C84505B6A 0x29CB3537
+		static float _GET_VEHICLE_MODEL_DOWN_FORCE(Hash modelHash) { return invoke<float>(0x53409B5163D5B846, modelHash); } // 0x53409B5163D5B846 0x37FBA7BC
+		static float _GET_VEHICLE_MODEL_MAX_KNOTS(Hash modelHash) { return invoke<float>(0xC6AD107DDC9054CC, modelHash); } // 0xC6AD107DDC9054CC 0x95BB67EB
+		static float _GET_VEHICLE_MODEL_MOVE_RESISTANCE(Hash modelHash) { return invoke<float>(0x5AA3F878A178C4FC, modelHash); } // 0x5AA3F878A178C4FC 0x87C5D271
+		static float _GET_VEHICLE_CLASS_MAX_SPEED(int vehicleClass) { return invoke<float>(0x00C09F246ABEDD82, vehicleClass); } // 0x00C09F246ABEDD82 0xCE67162C
+		static float GET_VEHICLE_CLASS_MAX_TRACTION(int vehicleClass) { return invoke<float>(0xDBC86D85C5059461, vehicleClass); } // 0xDBC86D85C5059461 0x5B4FDC16
+		static float GET_VEHICLE_CLASS_MAX_AGILITY(int vehicleClass) { return invoke<float>(0x4F930AD022D6DE3B, vehicleClass); } // 0x4F930AD022D6DE3B 0x45F2BD83
+		static float GET_VEHICLE_CLASS_MAX_ACCELERATION(int vehicleClass) { return invoke<float>(0x2F83E7E45D9EA7AE, vehicleClass); } // 0x2F83E7E45D9EA7AE 0x3E220A9B
+		static float GET_VEHICLE_CLASS_MAX_BRAKING(int vehicleClass) { return invoke<float>(0x4BF54C16EC8FEC03, vehicleClass); } // 0x4BF54C16EC8FEC03 0xD08CC1A5
+		static int _ADD_SPEED_ZONE_FOR_COORD(float x, float y, float z, float radius, float speed, BOOL p5) { return invoke<int>(0x2CE544C68FB812A0, x, y, z, radius, speed, p5); } // 0x2CE544C68FB812A0 0xD6685803
+		static BOOL _REMOVE_SPEED_ZONE(int speedzone) { return invoke<BOOL>(0x1033371FC8E842A7, speedzone); } // 0x1033371FC8E842A7 0x0C0332A6
+		static void OPEN_BOMB_BAY_DOORS(Vehicle vehicle) { invoke<Void>(0x87E7F24270732CB1, vehicle); } // 0x87E7F24270732CB1 0x6574041D
+		static void CLOSE_BOMB_BAY_DOORS(Vehicle vehicle) { invoke<Void>(0x3556041742A0DC74, vehicle); } // 0x3556041742A0DC74 0xF8EC5751
+		static BOOL IS_VEHICLE_SEARCHLIGHT_ON(Vehicle vehicle) { return invoke<BOOL>(0xC0F97FCE55094987, vehicle); } // 0xC0F97FCE55094987 0xADAF3513
+		static void SET_VEHICLE_SEARCHLIGHT(Vehicle heli, BOOL toggle, BOOL canBeUsedByAI) { invoke<Void>(0x14E85C5EE7A4D542, heli, toggle, canBeUsedByAI); } // 0x14E85C5EE7A4D542 0xE2C0DD8A
+		static BOOL _0x639431E895B9AA57(Ped ped, Vehicle vehicle, BOOL p2, BOOL p3, BOOL p4) { return invoke<BOOL>(0x639431E895B9AA57, ped, vehicle, p2, p3, p4); } // 0x639431E895B9AA57 0xAB0E79EB
+		static BOOL CAN_SHUFFLE_SEAT(Vehicle vehicle, Ped ped) { return invoke<BOOL>(0x30785D90C956BF35, vehicle, ped); } // 0x30785D90C956BF35 0xB3EB01ED
+		static int GET_NUM_MOD_KITS(Vehicle vehicle) { return invoke<int>(0x33F2E3FE70EAAE1D, vehicle); } // 0x33F2E3FE70EAAE1D 0xE4903AA0
+		static void SET_VEHICLE_MOD_KIT(Vehicle vehicle, int modKit) { invoke<Void>(0x1F2AA07F00B3217A, vehicle, modKit); } // 0x1F2AA07F00B3217A 0xB8132158
+		static int GET_VEHICLE_MOD_KIT(Vehicle vehicle) { return invoke<int>(0x6325D1A044AE510D, vehicle); } // 0x6325D1A044AE510D 0x9FE60927
+		static int GET_VEHICLE_MOD_KIT_TYPE(Vehicle vehicle) { return invoke<int>(0xFC058F5121E54C32, vehicle); } // 0xFC058F5121E54C32 0xE5F76765
+		static int GET_VEHICLE_WHEEL_TYPE(Vehicle vehicle) { return invoke<int>(0xB3ED1BFB4BE636DC, vehicle); } // 0xB3ED1BFB4BE636DC 0xDA58D7AE
+		static void SET_VEHICLE_WHEEL_TYPE(Vehicle vehicle, int WheelType) { invoke<Void>(0x487EB21CC7295BA1, vehicle, WheelType); } // 0x487EB21CC7295BA1 0x64BDAAAD
+		static int GET_NUM_MOD_COLORS(int p0, BOOL p1) { return invoke<int>(0xA551BE18C11A476D, p0, p1); } // 0xA551BE18C11A476D 0x73722CD9
+		static void SET_VEHICLE_MOD_COLOR_1(Vehicle vehicle, int paintType, int color, int p3) { invoke<Void>(0x43FEB945EE7F85B8, vehicle, paintType, color, p3); } // 0x43FEB945EE7F85B8 0xCBE9A54D
+		static void SET_VEHICLE_MOD_COLOR_2(Vehicle vehicle, int paintType, int color) { invoke<Void>(0x816562BADFDEC83E, vehicle, paintType, color); } // 0x816562BADFDEC83E 0xC32613C2
+		static void GET_VEHICLE_MOD_COLOR_1(Vehicle vehicle, int* paintType, int* color, int* pearlescentColor) { invoke<Void>(0xE8D65CA700C9A693, vehicle, paintType, color, pearlescentColor); } // 0xE8D65CA700C9A693 0xE625510A
+		static void GET_VEHICLE_MOD_COLOR_2(Vehicle vehicle, int* paintType, int* color) { invoke<Void>(0x81592BE4E3878728, vehicle, paintType, color); } // 0x81592BE4E3878728 0x9B76BB8E
+		static char* GET_VEHICLE_MOD_COLOR_1_NAME(Vehicle vehicle, BOOL p1) { return invoke<char*>(0xB45085B721EFD38C, vehicle, p1); } // 0xB45085B721EFD38C 0x9A0840FD
+		static char* GET_VEHICLE_MOD_COLOR_2_NAME(Vehicle vehicle) { return invoke<char*>(0x4967A516ED23A5A1, vehicle); } // 0x4967A516ED23A5A1 0x9BDC0B49
+		static BOOL _IS_VEHICLE_MOD_LOAD_DONE(Vehicle vehicle) { return invoke<BOOL>(0x9A83F5F9963775EF, vehicle); } // 0x9A83F5F9963775EF 0x112D637A
+		static void SET_VEHICLE_MOD(Vehicle VEHICLE, int modType, int modIndex, BOOL customTires) { invoke<Void>(0x6AF0636DDEDCB6DD, VEHICLE, modType, modIndex, customTires); } // 0x6AF0636DDEDCB6DD 0xB52E5ED5
+		static int GET_VEHICLE_MOD(Vehicle vehicle, int modType) { return invoke<int>(0x772960298DA26FDB, vehicle, modType); } // 0x772960298DA26FDB 0xDC520069
+		static BOOL GET_VEHICLE_MOD_VARIATION(Vehicle vehicle, int modType) { return invoke<BOOL>(0xB3924ECD70E095DC, vehicle, modType); } // 0xB3924ECD70E095DC 0xC1B92003
+		static int GET_NUM_VEHICLE_MODS(Vehicle vehicle, int modType) { return invoke<int>(0xE38E9162A2500646, vehicle, modType); } // 0xE38E9162A2500646 0x8A814FF9
+		static void REMOVE_VEHICLE_MOD(Vehicle vehicle, int modType) { invoke<Void>(0x92D619E420858204, vehicle, modType); } // 0x92D619E420858204 0x9CC80A43
+		static void TOGGLE_VEHICLE_MOD(Vehicle vehicle, int modType, BOOL toggle) { invoke<Void>(0x2A1F4F37F95BAD08, vehicle, modType, toggle); } // 0x2A1F4F37F95BAD08 0xD095F811
+		static BOOL IS_TOGGLE_MOD_ON(Vehicle vehicle, int modType) { return invoke<BOOL>(0x84B233A8C8FC8AE7, vehicle, modType); } // 0x84B233A8C8FC8AE7 0xF0E1689F
+		static char* GET_MOD_TEXT_LABEL(Vehicle vehicle, int modType, int modValue) { return invoke<char*>(0x8935624F8C5592CC, vehicle, modType, modValue); } // 0x8935624F8C5592CC 0x0BA39CA7
+		static char* GET_MOD_SLOT_NAME(Vehicle vehicle, int modType) { return invoke<char*>(0x51F0FEB9F6AE98C0, vehicle, modType); } // 0x51F0FEB9F6AE98C0 0x5E113483
+		static char* GET_LIVERY_NAME(Vehicle vehicle, int liveryIndex) { return invoke<char*>(0xB4C7A93837C91A1F, vehicle, liveryIndex); } // 0xB4C7A93837C91A1F 0xED80B5BE
+		static float GET_VEHICLE_MOD_MODIFIER_VALUE(Vehicle vehicle, int modType, int modIndex) { return invoke<float>(0x90A38E9838E0A8C1, vehicle, modType, modIndex); } // 0x90A38E9838E0A8C1 0x73AE5505
+		static Any _GET_VEHICLE_MOD_DATA(Vehicle vehicle, int modType, int modIndex) { return invoke<Any>(0x4593CF82AA179706, vehicle, modType, modIndex); } // 0x4593CF82AA179706 0x94850968
+		static void PRELOAD_VEHICLE_MOD(Any p0, int modType, Any p2) { invoke<Void>(0x758F49C24925568A, p0, modType, p2); } // 0x758F49C24925568A 0x6EA5F4A8
+		static BOOL HAS_PRELOAD_MODS_FINISHED(Any p0) { return invoke<BOOL>(0x06F43E5175EB6D96, p0); } // 0x06F43E5175EB6D96 0xA8A0D246
+		static void RELEASE_PRELOAD_MODS(Vehicle vehicle) { invoke<Void>(0x445D79F995508307, vehicle); } // 0x445D79F995508307 0xD442521F
+		static void SET_VEHICLE_TYRE_SMOKE_COLOR(Vehicle vehicle, int r, int g, int b) { invoke<Void>(0xB5BA80F839791C0F, vehicle, r, g, b); } // 0xB5BA80F839791C0F 0x3EDEC0DB
+		static void GET_VEHICLE_TYRE_SMOKE_COLOR(Vehicle vehicle, int* r, int* g, int* b) { invoke<Void>(0xB635392A4938B3C3, vehicle, r, g, b); } // 0xB635392A4938B3C3 0x75280015
+		static void SET_VEHICLE_WINDOW_TINT(Vehicle vehicle, int tint) { invoke<Void>(0x57C51E6BAD752696, vehicle, tint); } // 0x57C51E6BAD752696 0x497C8787
+		static int GET_VEHICLE_WINDOW_TINT(Vehicle vehicle) { return invoke<int>(0x0EE21293DAD47C95, vehicle); } // 0x0EE21293DAD47C95 0x13D53892
+		static int GET_NUM_VEHICLE_WINDOW_TINTS() { return invoke<int>(0x9D1224004B3A6707); } // 0x9D1224004B3A6707 0x625C7B66
+		static void GET_VEHICLE_COLOR(Vehicle vehicle, int* r, int* g, int* b) { invoke<Void>(0xF3CC740D36221548, vehicle, r, g, b); } // 0xF3CC740D36221548 0x03BC8F1B
+		static int _0xEEBFC7A7EFDC35B4(Vehicle vehicle) { return invoke<int>(0xEEBFC7A7EFDC35B4, vehicle); } // 0xEEBFC7A7EFDC35B4 0x749DEEA2
+		static Hash GET_VEHICLE_CAUSE_OF_DESTRUCTION(Vehicle vehicle) { return invoke<Hash>(0xE495D1EF4C91FD20, vehicle); } // 0xE495D1EF4C91FD20 0x7F8C20DD
+		static BOOL GET_IS_LEFT_VEHICLE_HEADLIGHT_DAMAGED(Vehicle vehicle) { return invoke<BOOL>(0x5EF77C9ADD3B11A3, vehicle); } // 0x5EF77C9ADD3B11A3 0xA0777943
+		static BOOL GET_IS_RIGHT_VEHICLE_HEADLIGHT_DAMAGED(Vehicle vehicle) { return invoke<BOOL>(0xA7ECB73355EB2F20, vehicle); } // 0xA7ECB73355EB2F20 0xF178390B
+		static void MODIFY_VEHICLE_TOP_SPEED(Vehicle vehicle, float value) { invoke<Void>(0x93A3996368C94158, vehicle, value); } // 0x93A3996368C94158 0xE943B09C
+		static void _SET_VEHICLE_ST(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x1CF38D529D7441D9, vehicle, toggle); } // 0x1CF38D529D7441D9 0xDF594D8D
+		static void _0x1F9FB66F3A3842D2(Vehicle vehicle, BOOL p1) { invoke<Void>(0x1F9FB66F3A3842D2, vehicle, p1); } // 0x1F9FB66F3A3842D2 0x4D840FC4
+		static Any _0x54B0F614960F4A5F(float p0, float p1, float p2, float p3, float p4, float p5, float p6) { return invoke<Any>(0x54B0F614960F4A5F, p0, p1, p2, p3, p4, p5, p6); } // 0x54B0F614960F4A5F 0x5AB26C2B
+		static void _0xE30524E1871F481D(Any p0) { invoke<Void>(0xE30524E1871F481D, p0); } // 0xE30524E1871F481D 0xEF05F807
+		static BOOL _IS_ANY_PASSENGER_RAPPELLING(Vehicle vehicle) { return invoke<BOOL>(0x291E373D483E7EE7, vehicle); } // 0x291E373D483E7EE7 0xD656E7E5
+		static void _SET_VEHICLE_ENGINE_TORQUE_MULTIPLIER(Vehicle vehicle, float value) { invoke<Void>(0xB59E4BD37AE292DB, vehicle, value); } // 0xB59E4BD37AE292DB 0x642DA5AA
+		static void _0x0AD9E8F87FF7C16F(Any p0, BOOL p1) { invoke<Void>(0x0AD9E8F87FF7C16F, p0, p1); } // 0x0AD9E8F87FF7C16F 0x04F5546C
+		static void SET_VEHICLE_IS_WANTED(Vehicle vehicle, BOOL state) { invoke<Void>(0xF7EC25A3EBEEC726, vehicle, state); } // 0xF7EC25A3EBEEC726 0xDAA388E8
+		static void _0xF488C566413B4232(Any p0, float p1) { invoke<Void>(0xF488C566413B4232, p0, p1); } // 0xF488C566413B4232 0xA25CCB8C
+		static void _GET_BOAT_BOOM_POSITION_RATIO(Any p0, BOOL p1) { invoke<Void>(0xC1F981A6F74F0C23, p0, p1); } // 0xC1F981A6F74F0C23 0x00966934
+		static void _0x0F3B4D4E43177236(Any p0, BOOL p1) { invoke<Void>(0x0F3B4D4E43177236, p0, p1); } // 0x0F3B4D4E43177236 0x113DF5FD
+		static float _0x6636C535F6CC2725(Vehicle vehicle) { return invoke<float>(0x6636C535F6CC2725, vehicle); } // 0x6636C535F6CC2725 0x7C8D6464
+		static void DISABLE_PLANE_AILERON(Vehicle vehicle, BOOL p1, BOOL p2) { invoke<Void>(0x23428FC53C60919C, vehicle, p1, p2); } // 0x23428FC53C60919C 0x7E84C45C
+		static BOOL GET_IS_VEHICLE_ENGINE_RUNNING(Vehicle vehicle) { return invoke<BOOL>(0xAE31E7DF9B5B132E, vehicle); } // 0xAE31E7DF9B5B132E 0x7DC6D022
+		static void _0x1D97D1E3A70A649F(Vehicle vehicle, BOOL p1) { invoke<Void>(0x1D97D1E3A70A649F, vehicle, p1); } // 0x1D97D1E3A70A649F 0xA03E42DF
+		static void _SET_BIKE_LEAN_ANGLE(Vehicle vehicle, float x, float y) { invoke<Void>(0x9CFA4896C3A53CBB, vehicle, x, y); } // 0x9CFA4896C3A53CBB 0x15D40761
+		static void _0xAB04325045427AAE(Vehicle vehicle, BOOL p1) { invoke<Void>(0xAB04325045427AAE, vehicle, p1); } // 0xAB04325045427AAE 0x1984F88D
+		static void _REMOVE_VEHICLE_OWNERSHIP(Vehicle vehicle) { invoke<Void>(0xCFD778E7904C255E, vehicle); } // 0xCFD778E7904C255E 0x3FBE904F
+		static void SET_LAST_DRIVEN_VEHICLE(Vehicle vehicle) { invoke<Void>(0xACFB2463CC22BED2, vehicle); } // 0xACFB2463CC22BED2 0xD1B71A25
+		static Vehicle GET_LAST_DRIVEN_VEHICLE() { return invoke<Vehicle>(0xB2D06FAEDE65B577); } // 0xB2D06FAEDE65B577 0xFEB0C0C8
+		static void _0xE01903C47C7AC89E() { invoke<Void>(0xE01903C47C7AC89E); } // 0xE01903C47C7AC89E
+		static void _0x02398B627547189C(Vehicle p0, BOOL p1) { invoke<Void>(0x02398B627547189C, p0, p1); } // 0x02398B627547189C 0x08CD58F9
+		static void _SET_PLANE_MIN_HEIGHT_ABOVE_TERRAIN(Vehicle plane, int height) { invoke<Void>(0xB893215D8D4C015B, plane, height); } // 0xB893215D8D4C015B 0x8C4B63E2
+		static void SET_VEHICLE_LOD_MULTIPLIER(Vehicle vehicle, float multiplier) { invoke<Void>(0x93AE6A61BE015BF1, vehicle, multiplier); } // 0x93AE6A61BE015BF1 0x569E5AE3
+		static void _0x428BACCDF5E26EAD(Vehicle vehicle, BOOL p1) { invoke<Void>(0x428BACCDF5E26EAD, vehicle, p1); } // 0x428BACCDF5E26EAD 0x1604C2F5
+		static Any _0x42A4BEB35D372407(Any p0) { return invoke<Any>(0x42A4BEB35D372407, p0); } // 0x42A4BEB35D372407 0x8CDB0C09
+		static Any _0x2C8CBFE1EA5FC631(Any p0) { return invoke<Any>(0x2C8CBFE1EA5FC631, p0); } // 0x2C8CBFE1EA5FC631 0xABC99E21
+		static void _0x4D9D109F63FEE1D4(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x4D9D109F63FEE1D4, vehicle, toggle); } // 0x4D9D109F63FEE1D4 0x900C878C
+		static void _0x279D50DE5652D935(Any p0, BOOL p1) { invoke<Void>(0x279D50DE5652D935, p0, p1); } // 0x279D50DE5652D935 0xB3200F72
+		static void _0xE44A982368A4AF23(Vehicle vehicle, Vehicle vehicle2) { invoke<Void>(0xE44A982368A4AF23, vehicle, vehicle2); } // 0xE44A982368A4AF23 0xBAE491C7
+		static void _0xF25E02CB9C5818F8() { invoke<Void>(0xF25E02CB9C5818F8); } // 0xF25E02CB9C5818F8 0xF0E59BC1
+		static void _0xBC3CCA5844452B06(float p0) { invoke<Void>(0xBC3CCA5844452B06, p0); } // 0xBC3CCA5844452B06 0x929801C6
+		static void SET_VEHICLE_SHOOT_AT_TARGET(Ped driver, Entity entity, float xTarget, float yTarget, float zTarget) { invoke<Void>(0x74CD9A9327A282EA, driver, entity, xTarget, yTarget, zTarget); } // 0x74CD9A9327A282EA 0x2343FFDF
+		static BOOL _GET_VEHICLE_OWNER(Vehicle vehicle, Entity* entity) { return invoke<BOOL>(0x8F5EBAB1F260CFCE, vehicle, entity); } // 0x8F5EBAB1F260CFCE 0x4A557117
+		static void SET_FORCE_HD_VEHICLE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x97CE68CB032583F0, vehicle, toggle); } // 0x97CE68CB032583F0 0xE0FC6A32
+		static void _0x182F266C2D9E2BEB(Vehicle vehicle, float p1) { invoke<Void>(0x182F266C2D9E2BEB, vehicle, p1); } // 0x182F266C2D9E2BEB 0x7D0DE7EA
+		static int GET_VEHICLE_PLATE_TYPE(Vehicle vehicle) { return invoke<int>(0x9CCC9525BF2408E0, vehicle); } // 0x9CCC9525BF2408E0 0x65CA9286
+		static void TRACK_VEHICLE_VISIBILITY(Vehicle vehicle) { invoke<Void>(0x64473AEFDCF47DCA, vehicle); } // 0x64473AEFDCF47DCA 0x78122DC1
+		static BOOL IS_VEHICLE_VISIBLE(Vehicle vehicle) { return invoke<BOOL>(0xAA0A52D24FB98293, vehicle); } // 0xAA0A52D24FB98293 0x7E0D6056
+		static void SET_VEHICLE_GRAVITY(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x89F149B6131E57DA, vehicle, toggle); } // 0x89F149B6131E57DA 0x07B2A6DC
+		static void _0xE6C0C80B8C867537(BOOL p0) { invoke<Void>(0xE6C0C80B8C867537, p0); } // 0xE6C0C80B8C867537 0xD2B8ACBD
+		static Any _0x36492C2F0D134C56(Any p0) { return invoke<Any>(0x36492C2F0D134C56, p0); } // 0x36492C2F0D134C56 0xA4A75FCF
+		static void _0x06582AFF74894C75(Vehicle vehicle, BOOL p1) { invoke<Void>(0x06582AFF74894C75, vehicle, p1); } // 0x06582AFF74894C75 0x50F89338
+		static void _0xDFFCEF48E511DB48(Any p0, BOOL p1) { invoke<Void>(0xDFFCEF48E511DB48, p0, p1); } // 0xDFFCEF48E511DB48 0xEB7D7C27
+		static BOOL _IS_VEHICLE_SHOP_RESPRAY_ALLOWED(Vehicle vehicle) { return invoke<BOOL>(0x8D474C8FAEFF6CDE, vehicle); } // 0x8D474C8FAEFF6CDE 0x5EB00A6A
+		static void SET_VEHICLE_ENGINE_CAN_DEGRADE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x983765856F2564F9, vehicle, toggle); } // 0x983765856F2564F9 0x081DAC12
+		static void _ADD_VEHICLE_SHADOW(Vehicle vehicle, int p1, int p2) { invoke<Void>(0xF0E4BA16D1DB546C, vehicle, p1, p2); } // 0xF0E4BA16D1DB546C 0x5BD8D82D
+		static void _0xF87D9F2301F7D206(Any p0) { invoke<Void>(0xF87D9F2301F7D206, p0); } // 0xF87D9F2301F7D206 0x450AD03A
+		static BOOL _VEHICLE_HAS_LANDING_GEAR(Vehicle vehicle) { return invoke<BOOL>(0x4198AB0022B15F87, vehicle); } // 0x4198AB0022B15F87 0xBD085DCA
+		static BOOL _ARE_PROPELLERS_UNDAMAGED(Vehicle vehicle) { return invoke<BOOL>(0x755D6D5267CBBD7E, vehicle); } // 0x755D6D5267CBBD7E 0xABBDD5C6
+		static void _0x0CDDA42F9E360CA6(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x0CDDA42F9E360CA6, vehicle, toggle); } // 0x0CDDA42F9E360CA6 0x9B581DE7
+		static BOOL IS_VEHICLE_STOLEN(Vehicle vehicle) { return invoke<BOOL>(0x4AF9BD80EEBEB453, vehicle); } // 0x4AF9BD80EEBEB453 0x20B61DDE
+		static void SET_VEHICLE_IS_STOLEN(Vehicle vehicle, BOOL isStolen) { invoke<Void>(0x67B2C79AA7FF5738, vehicle, isStolen); } // 0x67B2C79AA7FF5738 0x70912E42
+		static void SET_PLANE_TURBULENCE_MULTIPLIER(Vehicle plane, float multiplier) { invoke<Void>(0xAD2D28A1AFDFF131, plane, multiplier); } // 0xAD2D28A1AFDFF131 0xED159AE6
+		static BOOL _ARE_VEHICLE_WINGS_INTACT(Vehicle vehicle) { return invoke<BOOL>(0x5991A01434CE9677, vehicle); } // 0x5991A01434CE9677 0xAF8CB3DF
+		static void _DEBUG_VEHICLE(Vehicle vehicle) { invoke<Void>(0xB264C4D2F2B0A78B, vehicle); } // 0xB264C4D2F2B0A78B 0x45F72495
+		static void DETACH_VEHICLE_FROM_CARGOBOB(Vehicle vehicle, Vehicle cargobob) { invoke<Void>(0x0E21D3DF1051399D, vehicle, cargobob); } // 0x0E21D3DF1051399D 0x83D3D331
+		static BOOL DETACH_VEHICLE_FROM_ANY_CARGOBOB(Vehicle vehicle) { return invoke<BOOL>(0xADF7BE450512C12F, vehicle); } // 0xADF7BE450512C12F 0x50E0EABE
+		static BOOL IS_VEHICLE_ATTACHED_TO_CARGOBOB(Vehicle cargobob, Vehicle vehicleAttached) { return invoke<BOOL>(0xD40148F22E81A1D9, cargobob, vehicleAttached); } // 0xD40148F22E81A1D9 0x5DEEC76C
+		static Vehicle GET_VEHICLE_ATTACHED_TO_CARGOBOB(Vehicle cargobob) { return invoke<Vehicle>(0x873B82D42AC2B9E5, cargobob); } // 0x873B82D42AC2B9E5 0x301A1D24
+		static void ATTACH_VEHICLE_TO_CARGOBOB(Vehicle vehicle, Vehicle cargobob, int p2, float x, float y, float z) { invoke<Void>(0x4127F1D84E347769, vehicle, cargobob, p2, x, y, z); } // 0x4127F1D84E347769 0x607DC9D5
+		static void _0x571FEB383F629926(Vehicle cargobob, BOOL p1) { invoke<Void>(0x571FEB383F629926, cargobob, p1); } // 0x571FEB383F629926
+		static Vector3 _GET_CARGOBOB_HOOK_POSITION(Vehicle cargobob) { return invoke<Vector3>(0xCBDB9B923CACC92D, cargobob); } // 0xCBDB9B923CACC92D
+		static BOOL DOES_CARGOBOB_HAVE_PICK_UP_ROPE(Vehicle cargobob) { return invoke<BOOL>(0x1821D91AD4B56108, cargobob); } // 0x1821D91AD4B56108 0xAF769B81
+		static void CREATE_PICK_UP_ROPE_FOR_CARGOBOB(Vehicle cargobob, int state) { invoke<Void>(0x7BEB0C7A235F6F3B, cargobob, state); } // 0x7BEB0C7A235F6F3B 0x4D3C9A99
+		static void REMOVE_PICK_UP_ROPE_FOR_CARGOBOB(Vehicle cargobob) { invoke<Void>(0x9768CF648F54C804, cargobob); } // 0x9768CF648F54C804 0xA8211EE9
+		static void _SET_CARGOBOB_HOOK_POSITION(Vehicle cargobob, float xOffset, float yOffset, int state) { invoke<Void>(0x877C1EAEAC531023, cargobob, xOffset, yOffset, state); } // 0x877C1EAEAC531023 0x3A8AB081
+		static void _0xCF1182F682F65307(Any p0, Player p1) { invoke<Void>(0xCF1182F682F65307, p0, p1); } // 0xCF1182F682F65307
+		static BOOL _DOES_CARGOBOB_HAVE_PICKUP_MAGNET(Vehicle cargobob) { return invoke<BOOL>(0x6E08BF5B3722BAC9, cargobob); } // 0x6E08BF5B3722BAC9
+		static void _SET_CARGOBOB_PICKUP_MAGNET_ACTIVE(Vehicle cargobob, BOOL isActive) { invoke<Void>(0x9A665550F8DA349B, cargobob, isActive); } // 0x9A665550F8DA349B
+		static void _SET_CARGOBOB_PICKUP_MAGNET_STRENGTH(Vehicle cargobob, float strength) { invoke<Void>(0xBCBFCD9D1DAC19E2, cargobob, strength); } // 0xBCBFCD9D1DAC19E2
+		static void _0xA17BAD153B51547E(Vehicle cargobob, float p1) { invoke<Void>(0xA17BAD153B51547E, cargobob, p1); } // 0xA17BAD153B51547E
+		static void _0x66979ACF5102FD2F(Vehicle cargobob, float p1) { invoke<Void>(0x66979ACF5102FD2F, cargobob, p1); } // 0x66979ACF5102FD2F
+		static void _0x6D8EAC07506291FB(Vehicle cargobob, float p1) { invoke<Void>(0x6D8EAC07506291FB, cargobob, p1); } // 0x6D8EAC07506291FB
+		static void _0xED8286F71A819BAA(Vehicle cargobob, float p1) { invoke<Void>(0xED8286F71A819BAA, cargobob, p1); } // 0xED8286F71A819BAA
+		static void _0x685D5561680D088B(Vehicle vehicle, float p1) { invoke<Void>(0x685D5561680D088B, vehicle, p1); } // 0x685D5561680D088B
+		static void _0xE301BD63E9E13CF0(Vehicle vehicle, Vehicle cargobob) { invoke<Void>(0xE301BD63E9E13CF0, vehicle, cargobob); } // 0xE301BD63E9E13CF0
+		static void _0x9BDDC73CC6A115D4(Vehicle vehicle, BOOL p1, BOOL p2) { invoke<Void>(0x9BDDC73CC6A115D4, vehicle, p1, p2); } // 0x9BDDC73CC6A115D4
+		static void _0x56EB5E94318D3FB6(Vehicle vehicle, BOOL p1) { invoke<Void>(0x56EB5E94318D3FB6, vehicle, p1); } // 0x56EB5E94318D3FB6
+		static BOOL DOES_VEHICLE_HAVE_WEAPONS(Vehicle vehicle) { return invoke<BOOL>(0x25ECB9F8017D98E0, vehicle); } // 0x25ECB9F8017D98E0 0xB2E1E1FB
+		static void _0x2C4A1590ABF43E8B(Vehicle vehicle, BOOL p1) { invoke<Void>(0x2C4A1590ABF43E8B, vehicle, p1); } // 0x2C4A1590ABF43E8B 0x2EC19A8B
+		static void DISABLE_VEHICLE_WEAPON(BOOL disabled, Hash weaponHash, Vehicle vehicle, Ped owner) { invoke<Void>(0xF4FC6A6F67D8D856, disabled, weaponHash, vehicle, owner); } // 0xF4FC6A6F67D8D856 0xA688B7D1
+		static void _0xE05DD0E9707003A3(Any p0, BOOL p1) { invoke<Void>(0xE05DD0E9707003A3, p0, p1); } // 0xE05DD0E9707003A3 0x123E5B90
+		static void _0x21115BCD6E44656A(Any p0, BOOL p1) { invoke<Void>(0x21115BCD6E44656A, p0, p1); } // 0x21115BCD6E44656A 0xEBC225C1
+		static int GET_VEHICLE_CLASS(Vehicle vehicle) { return invoke<int>(0x29439776AAA00A62, vehicle); } // 0x29439776AAA00A62 0xC025338E
+		static int GET_VEHICLE_CLASS_FROM_NAME(Hash modelHash) { return invoke<int>(0xDEDF1C8BD47C2200, modelHash); } // 0xDEDF1C8BD47C2200 0xEA469980
+		static void SET_PLAYERS_LAST_VEHICLE(Vehicle vehicle) { invoke<Void>(0xBCDF8BAF56C87B6A, vehicle); } // 0xBCDF8BAF56C87B6A 0xDE86447D
+		static void SET_VEHICLE_CAN_BE_USED_BY_FLEEING_PEDS(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x300504B23BD3B711, vehicle, toggle); } // 0x300504B23BD3B711 0x5130DB1E
+		static void _0xE5810AC70602F2F5(Vehicle vehicle, float p1) { invoke<Void>(0xE5810AC70602F2F5, vehicle, p1); } // 0xE5810AC70602F2F5 0xB6BE07E0
+		static void _SET_VEHICLE_CREATES_MONEY_PICKUPS_WHEN_EXPLODED(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x068F64F2470F9656, vehicle, toggle); } // 0x068F64F2470F9656 0x4BB5605D
+		static void _SET_VEHICLE_JET_ENGINE_ON(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xB8FBC8B1330CA9B4, vehicle, toggle); } // 0xB8FBC8B1330CA9B4 0x51E0064F
+		static void _0x10655FAB9915623D(Any p0, Any p1) { invoke<Void>(0x10655FAB9915623D, p0, p1); } // 0x10655FAB9915623D
+		static void _0x79DF7E806202CE01(Any p0, Any p1) { invoke<Void>(0x79DF7E806202CE01, p0, p1); } // 0x79DF7E806202CE01 0xAEF9611C
+		static void _0x9007A2F21DC108D4(Any p0, float p1) { invoke<Void>(0x9007A2F21DC108D4, p0, p1); } // 0x9007A2F21DC108D4 0x585E49B6
+		static void _SET_HELICOPTER_ROLL_PITCH_YAW_MULT_HEALTH(Vehicle helicopter, float multiplier) { invoke<Void>(0x6E0859B530A365CC, helicopter, multiplier); } // 0x6E0859B530A365CC 0x6E67FD35
+		static void SET_VEHICLE_FRICTION_OVERRIDE(Vehicle vehicle, float friction) { invoke<Void>(0x1837AF7C627009BA, vehicle, friction); } // 0x1837AF7C627009BA 0x32AFD42E
+		static void SET_VEHICLE_WHEELS_CAN_BREAK_OFF_WHEN_BLOW_UP(Vehicle vehicle, BOOL toggle) { invoke<Void>(0xA37B9A517B133349, vehicle, toggle); } // 0xA37B9A517B133349 0x670913A4
+		static BOOL _0xF78F94D60248C737(Any p0, BOOL p1) { return invoke<BOOL>(0xF78F94D60248C737, p0, p1); } // 0xF78F94D60248C737
+		static void SET_VEHICLE_CEILING_HEIGHT(Vehicle vehicle, float p1) { invoke<Void>(0xA46413066687A328, vehicle, p1); } // 0xA46413066687A328 0x98A10A86
+		static void _0x5E569EC46EC21CAE(Vehicle vehicle, BOOL toggle) { invoke<Void>(0x5E569EC46EC21CAE, vehicle, toggle); } // 0x5E569EC46EC21CAE 0xBC649C49
+		static void _CLEAR_VEHICLE_ROUTE_HISTORY(Vehicle vehicle) { invoke<Void>(0x6D6AF961B72728AE, vehicle); } // 0x6D6AF961B72728AE 0x8DD9AA0C
+		static BOOL DOES_VEHICLE_EXIST_WITH_DECORATOR(char* decorator) { return invoke<BOOL>(0x956B409B984D9BF7, decorator); } // 0x956B409B984D9BF7 0x39E68EDD
+		static void SET_VEHICLE_EXCLUSIVE_DRIVER(Vehicle vehicle, Ped ped) { invoke<Void>(0x41062318F23ED854, vehicle, ped); } // 0x41062318F23ED854 0xAA8BD440
+		static void _SET_VEHICLE_EXCLUSIVE_DRIVER_2(Vehicle vehicle, Ped ped, int p2) { invoke<Void>(0xB5C51B5502E85E83, vehicle, ped, p2); } // 0xB5C51B5502E85E83
+		static void _0x500873A45724C863(Vehicle vehicle, Any p1) { invoke<Void>(0x500873A45724C863, vehicle, p1); } // 0x500873A45724C863
+		static void _0xB055A34527CB8FD7(Vehicle vehicle, BOOL p1) { invoke<Void>(0xB055A34527CB8FD7, vehicle, p1); } // 0xB055A34527CB8FD7
+		static void SET_DISTANT_CARS_ENABLED(BOOL toggle) { invoke<Void>(0xF796359A959DF65D, toggle); } // 0xF796359A959DF65D 0xB5CC548B
+		static void _SET_VEHICLE_NEON_LIGHTS_COLOUR(Vehicle vehicle, int r, int g, int b) { invoke<Void>(0x8E0A582209A62695, vehicle, r, g, b); } // 0x8E0A582209A62695
+		static void _GET_VEHICLE_NEON_LIGHTS_COLOUR(Vehicle vehicle, int* r, int* g, int* b) { invoke<Void>(0x7619EEE8C886757F, vehicle, r, g, b); } // 0x7619EEE8C886757F
+		static void _SET_VEHICLE_NEON_LIGHT_ENABLED(Vehicle vehicle, int index, BOOL toggle) { invoke<Void>(0x2AA720E4287BF269, vehicle, index, toggle); } // 0x2AA720E4287BF269
+		static BOOL _IS_VEHICLE_NEON_LIGHT_ENABLED(Vehicle vehicle, int index) { return invoke<BOOL>(0x8C4B92553E4766A5, vehicle, index); } // 0x8C4B92553E4766A5
+		static void _0x35E0654F4BAD7971(BOOL p0) { invoke<Void>(0x35E0654F4BAD7971, p0); } // 0x35E0654F4BAD7971
+		static void _0xB088E9A47AE6EDD5(Vehicle vehicle, BOOL p1) { invoke<Void>(0xB088E9A47AE6EDD5, vehicle, p1); } // 0xB088E9A47AE6EDD5
+		static void _REQUEST_VEHICLE_SCALEFORM_MOVIE(Vehicle vehicle) { invoke<Void>(0xDBA3C090E3D74690, vehicle); } // 0xDBA3C090E3D74690
+		static float GET_VEHICLE_BODY_HEALTH(Vehicle vehicle) { return invoke<float>(0xF271147EB7B40F12, vehicle); } // 0xF271147EB7B40F12 0x2B2FCC28
+		static void SET_VEHICLE_BODY_HEALTH(Vehicle vehicle, float value) { invoke<Void>(0xB77D05AC8C78AADB, vehicle, value); } // 0xB77D05AC8C78AADB 0x920C2517
+		static void _GET_VEHICLE_SUSPENSION_DIMENSIONS(Vehicle vehicle, Vector3* out1, Vector3* out2) { invoke<Void>(0xDF7E3EEB29642C38, vehicle, out1, out2); } // 0xDF7E3EEB29642C38
+		static float _GET_VEHICLE_SUSPENSION_HEIGHT(Vehicle vehicle) { return invoke<float>(0x53952FD2BAA19F17, vehicle); } // 0x53952FD2BAA19F17 0xB73A1486
+		static void _SET_CAR_HIGH_SPEED_BUMP_SEVERITY_MULTIPLIER(float multiplier) { invoke<Void>(0x84FD40F56075E816, multiplier); } // 0x84FD40F56075E816
+		static void _0xA7DCDF4DED40A8F4(Vehicle vehicle, BOOL p1) { invoke<Void>(0xA7DCDF4DED40A8F4, vehicle, p1); } // 0xA7DCDF4DED40A8F4
+		static float _GET_VEHICLE_BODY_HEALTH_2(Vehicle vehicle) { return invoke<float>(0xB8EF61207C2393A9, vehicle); } // 0xB8EF61207C2393A9
+		static BOOL _0xD4C4642CB7F50B5D(Vehicle vehicle) { return invoke<BOOL>(0xD4C4642CB7F50B5D, vehicle); } // 0xD4C4642CB7F50B5D
+		static void _0xC361AA040D6637A8(Vehicle vehicle, BOOL p1) { invoke<Void>(0xC361AA040D6637A8, vehicle, p1); } // 0xC361AA040D6637A8
+		static void _SET_VEHICLE_HUD_SPECIAL_ABILITY_BAR_ACTIVE(Vehicle vehicle, BOOL active) { invoke<Void>(0x99C82F8A139F3E4E, vehicle, active); } // 0x99C82F8A139F3E4E
+		static void _0xE16142B94664DEFD(Vehicle vehicle, BOOL p1) { invoke<Void>(0xE16142B94664DEFD, vehicle, p1); } // 0xE16142B94664DEFD
