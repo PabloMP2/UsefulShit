@@ -16,7 +16,28 @@ static const char* CriminalEnt[] = {
 "VIGERO2",
 "WEEVIL2"
 };
-
+static const char* CasinoCars[] = {
+"ASBO",
+"EVERON",
+"FORMULA",
+"FORMULA2",
+"FURIA",
+"IMORGON",
+"JB7002",
+"KANJO",
+"KOMODA",
+"MINITANK",
+"OUTLAW",
+"REBLA",
+"RETINUE2"
+"STRYDER"
+"SUGOI",
+"SULTAN2",
+"VAGRANT",
+"VSTR",
+"YOSEMITE2",
+"ZHABA"
+};
 static const char* Planes1[] = {
 	"BESRA", "CARGOPLANE", "CUBAN800", "DODO", "DUSTER",
 	"HYDRA", "JET", "LAZER", "LUXOR", "LUXOR2",
