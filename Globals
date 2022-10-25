@@ -1,0 +1,45 @@
+//1.61
+Special cargo buy cooldown Global_262145.f_15608
+Special cargo sell cooldown Global_262145.f_15609
+Global_262145.f_15843 = 10000;
+Global_262145.f_15844 = 11000;  specialCargo2CratesPrice
+Global_262145.f_15845 = 12000; specialCargo3CratesPrice
+Global_262145.f_15846 = 13000; specialCargo4to5CratesPrice
+Global_262145.f_15847 = 13500; specialCargo6to7CratesPrice
+Global_262145.f_15848 = 14000; specialCargo8to9CratesPrice
+Global_262145.f_15849 = 14500; specialCargo10to14CratesPrice
+Global_262145.f_15850 = 15000; specialCargo15to19CratesPrice
+Global_262145.f_15851 = 15500; specialCargo20to24CratesPrice
+Global_262145.f_15852 = 16000; specialCargo25to29CratesPrice
+Global_262145.f_15853 = 16500; specialCargo30to34CratesPrice
+Global_262145.f_15854 = 17000; specialCargo35to39CratesPrice
+Global_262145.f_15855 = 17500; specialCargo40to44CratesPrice 
+Global_262145.f_15856 = 17750; specialCargo45to49CratesPrice
+Global_262145.f_15857 = 18000; specialCargo50to59CratesPrice
+Global_262145.f_15858 = 18250; specialCargo60to69CratesPrice
+Global_262145.f_15859 = 18500; specialCargo70to79CratesPrice
+Global_262145.f_15860 = 18750; specialCargo80to89CratesPrice
+Global_262145.f_15861 = 19000; specialCargo90to99CratesPrice
+Global_262145.f_15862 = 19500; specialCargo100to110CratesPrice
+Global_262145.f_15863 = 20000; specialCargo111CratesPrice
+Stone hatchet cooldown Global_262145.f_25332
+stoneHatchetKillAddedDuration Global_262145.f_25331
+stoneHatchetDuration Global_262145.f_25330
+stoneHatchetWeaponDefenseMultiplier Global_262145.f_25325
+stoneHatchetHealthRechargeMultiplier Global_262145.f_25328
+stoneHatchetHealthRechargeLimit Global_262145.f_25329
+turn snow on / off Global_262145.f_4751
+//apart bonus percentage
+1933908 + 3008 + (1 + 0 * 1) // player 1
+1933908 + 3008 + (1 + 1 * 1) // player 2
+1933908 + 3008 + (1 + 2 * 1) // player 3
+1933908 + 3008 + (1 + 3 * 1) // player 4
+//doomsday bonus percentage
+1962546 + 812 + 50 + (1 + 0 * 1) // player 1
+1962546 + 812 + 50 + (1 + 1 * 1) // player 2
+1962546 + 812 + 50 + (1 + 2 * 1) // player 3
+1962546 + 812 + 50 + (1 + 3 * 1) // player 4
+//casino bonus percentage
+1966534 + 1497 + 736 + 92 + (1 + 0 * 1) // player 1
+1966534 + 1497 + 736 + 92 + (1 + 1 * 1) // player 2
+1966534 + 1497 + 736 + 92 + (1 + 2 * 1) // player 3
