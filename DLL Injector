@@ -1,0 +1,159 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <windows.h>
+#include <winsdkver.h>
+#include <sdkddkver.h>
+#include <winternl.h>
+#include <WinUser.h>
+#include <d3d11.h>
+#include <cassert>
+#include <cinttypes>
+#include <cstdarg>
+#include <cstddef>
+#include <cstdint>
+#include <cstdio>
+#include <cstdlib>
+#include <ctime>
+#include <atomic>
+#include <Mmsystem.h>
+#include <xkeycheck.h>
+#include <chrono>
+#include <deque>
+#include <filesystem>
+#include <fstream>
+#include <map>
+#include <set>
+#include <Psapi.h>
+#include <unordered_map>
+#include <algorithm>
+#include <functional>
+#include <timeapi.h>
+#include <time.h>
+#include <intrin.h>
+#include <iomanip>
+#include <iostream>
+#include <ostream>
+#include <memory> 
+#include <stdarg.h> 
+#include <limits>
+#include <mutex>
+#include <optional>
+#include <sstream>
+#include <stack>
+#include <ShlObj.h>
+#include <string>
+#include <xstring>
+#include <xutility>
+#include <thread>
+#include <type_traits>
+#include <vector>
+#include <locale>
+#include <codecvt>
+#include <stdio.h>
+#include <urlmon.h>
+#include <iostream>
+#include <Windows.h>
+#include <TlHelp32.h>
+#include <iomanip>
+#include <Shlwapi.h>
+#define print(format, ...) fprintf (stderr, format, __VA_ARGS__)
+
+#pragma comment(lib, "urlmon.lib")
+#define Mod_Menu_Name "Menu Name"
+std::string Menu_Path = std::string("\\") + Mod_Menu_Name;
+namespace Mod_Hub_Base
+{
+	namespace fs = std::filesystem;
+}
+
+char str[69];
+char* Add_Strings(char* string1, char* string2)
+{
+	memset(str, 0, sizeof(str));
+	strcpy_s(str, "");
+	strcpy_s(str, string1);
+	strcat_s(str, string2);
+	return str;
+}
+std::string Documents_Patha()
+{
+	wchar_t Folder[1024];
+	HRESULT hr = SHGetFolderPathW(nullptr, CSIDL_APPDATA, nullptr, 0, Folder);
+	if (SUCCEEDED(hr))
+	{
+		char str[1024];
+		wcstombs(str, Folder, 1023);
+		return Add_Strings(str, (char*)_strdup(Menu_Path.c_str())); // this is your Folder where its going to find your dll file
+	}
+	return "";
+}
+
+DWORD GetProcId(const char* procName)
+{
+	DWORD procId = 0;
+	HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+
+	if (hSnap != INVALID_HANDLE_VALUE)
+	{
+		PROCESSENTRY32 procEntry;
+		procEntry.dwSize = sizeof(procEntry);
+
+		if (Process32First(hSnap, &procEntry))
+		{
+			do
+			{
+				if (!_stricmp(procEntry.szExeFile, procName))
+				{
+					procId = procEntry.th32ProcessID;
+					break;
+				}
+			} while (Process32Next(hSnap, &procEntry));
+		}
+	}
+	CloseHandle(hSnap);
+	return procId;
+}
+
+int main()
+{
+	std::fstream appDpath();
+	if (!std::filesystem::exists(Documents_Patha().c_str()))
+	std::filesystem::create_directory(Documents_Patha().c_str());
+    //Download Stuff
+	std::string DownloadP1 = Documents_Patha() + std::string("\\DownloadName.Extenstion");
+	URLDownloadToFileA(0, "Url To File Which Your Gonna Download", DownloadP1.c_str(), 0, 0);
+	//This Needs Changing Before Release
+	//Possibly Link To Custom Url For Dll So Can Update it
+
+	system("start https://discord.gg/qAeHDGVSBg");
+	const char* dllPath = "Dll Here";
+	const char* procName = "GTA5.exe";
+	DWORD procId = 0;
+
+	while (!procId)
+	{
+		procId = GetProcId(procName);
+		Sleep(30);
+	}
+
+	HANDLE hProc = OpenProcess(PROCESS_ALL_ACCESS, 0, procId);
+
+	if (hProc && hProc != INVALID_HANDLE_VALUE)
+	{
+		void* loc = VirtualAllocEx(hProc, 0, MAX_PATH, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+
+		WriteProcessMemory(hProc, loc, dllPath, strlen(dllPath) + 1, 0);
+
+		HANDLE hThread = CreateRemoteThread(hProc, 0, 0, (LPTHREAD_START_ROUTINE)LoadLibraryA, loc, 0, 0);
+
+		if (hThread)
+		{
+			CloseHandle(hThread);
+		}
+	}
+
+	if (hProc)
+	{
+		CloseHandle(hProc);
+	}
+	return 0;
+}
